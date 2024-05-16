@@ -1,8 +1,10 @@
 package com.example.CodeCrafter;
 import android.content.Intent;
 import android.content.pm.PackageManager;
+import android.database.Cursor;
 import android.net.Uri;
 import android.os.Bundle;
+import android.provider.MediaStore;
 import android.util.Log;
 import android.view.MenuItem;
 import android.view.View;
@@ -66,6 +68,27 @@ public class Account extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_account);
+
+//        Uri uri = MediaStore.Images.Media.EXTERNAL_CONTENT_URI;
+//        String[] projection = { MediaStore.Images.Media.DATA };
+//        Cursor cursor = getContentResolver().query(uri, projection, null, null, null);
+//
+//        if (cursor != null) {
+//            int columnIndex = cursor.getColumnIndex(MediaStore.Images.Media.DATA);
+//            if (columnIndex != -1) {
+//                while (cursor.moveToNext()) {
+//                    String imagePath = cursor.getString(columnIndex);
+//                    ImageView profilePictureImageView = findViewById(R.id.ProfilePicture);
+//                    Picasso.get().load("file://" + imagePath).into(profilePictureImageView);
+//                }
+//            } else {
+//                Log.e("TAG", "Column index not found");
+//            }
+//            cursor.close();
+//        } else {
+//            Log.e("TAG", "Cursor is null");
+//        }
+
         userScore = findViewById(R.id.userScore);
         FirebaseAuth auth = FirebaseAuth.getInstance();
         FirebaseUser user = auth.getCurrentUser();
