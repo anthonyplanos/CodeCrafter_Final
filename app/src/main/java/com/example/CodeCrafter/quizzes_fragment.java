@@ -8,6 +8,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
 import androidx.annotation.NonNull;
@@ -44,9 +45,6 @@ public class quizzes_fragment extends AppCompatActivity {
     String answer1;
     String answer2;
     String answer3;
-    String answerNumber1;
-    String answerNumber2;
-    String answerNumber3;
     int score;
     String currentUserEmail;
     Button submitAnswers;
@@ -114,28 +112,7 @@ public class quizzes_fragment extends AppCompatActivity {
                         submitAnswers.setOnClickListener(new View.OnClickListener() {
                             @Override
                             public void onClick(View v) {
-                                userAnswer = EditTextAnswers.getText().toString();
-                                if (!userAnswer.isEmpty()) {
-                                    String[] answers = userAnswer.split(",");
-                                    int correctAnswer = 0;
-                                    if (answers.length <= 3) {
-                                        answerNumber1 = answers[0].trim();
-                                        answerNumber2 = answers[1].trim();
-                                        answerNumber3 = answers[2].trim();
-                                    }
-                                    if (answerNumber1.equals(answer1)) {
-                                        correctAnswer++;
-                                    }
-                                    if (answerNumber2.equals(answer2)) {
-                                        correctAnswer++;
-                                    }
-                                    if (answerNumber3.equals(answer3)) {
-                                        correctAnswer++;
-                                    }
-                                    quizzes_fragment.this.correctAnwers.setText(fullAnswer);
-                                    score += correctAnswer;
-                                    submitAnswersForExercise(stringId, score, completeQuiz);
-                                }
+                                onClickListener();
                             }
                         });
                         listenForExerciseCompletion(stringId, completeQuiz);
@@ -157,28 +134,7 @@ public class quizzes_fragment extends AppCompatActivity {
                         submitAnswers.setOnClickListener(new View.OnClickListener() {
                             @Override
                             public void onClick(View v) {
-                                userAnswer = EditTextAnswers.getText().toString();
-                                if (!userAnswer.isEmpty()) {
-                                    String[] answers = userAnswer.split(",");
-                                    int correctAnswer = 0;
-                                    if (answers.length <= 3) {
-                                        answerNumber1 = answers[0].trim();
-                                        answerNumber2 = answers[1].trim();
-                                        answerNumber3 = answers[2].trim();
-                                    }
-                                    if (answerNumber1.equals(answer1)) {
-                                        correctAnswer++;
-                                    }
-                                    if (answerNumber2.equals(answer2)) {
-                                        correctAnswer++;
-                                    }
-                                    if (answerNumber3.equals(answer3)) {
-                                        correctAnswer++;
-                                    }
-                                    quizzes_fragment.this.correctAnwers.setText(fullAnswer);
-                                    score += correctAnswer;
-                                    submitAnswersForExercise(stringId, score, completeQuiz);
-                                }
+                                onClickListener();
                             }
                         });
                         listenForExerciseCompletion(stringId, completeQuiz);
@@ -204,28 +160,7 @@ public class quizzes_fragment extends AppCompatActivity {
                         submitAnswers.setOnClickListener(new View.OnClickListener() {
                             @Override
                             public void onClick(View v) {
-                                userAnswer = EditTextAnswers.getText().toString();
-                                if (!userAnswer.isEmpty()) {
-                                    String[] answers = userAnswer.split(",");
-                                    int correctAnswer = 0;
-                                    if (answers.length <= 3) {
-                                        answerNumber1 = answers[0].trim();
-                                        answerNumber2 = answers[1].trim();
-                                        answerNumber3 = answers[2].trim();
-                                    }
-                                    if (answerNumber1.equals(answer1)) {
-                                        correctAnswer++;
-                                    }
-                                    if (answerNumber2.equals(answer2)) {
-                                        correctAnswer++;
-                                    }
-                                    if (answerNumber3.equals(answer3)) {
-                                        correctAnswer++;
-                                    }
-                                    quizzes_fragment.this.correctAnwers.setText(fullAnswer);
-                                    score += correctAnswer;
-                                    submitAnswersForExercise(stringId, score, completeQuiz);
-                                }
+                                onClickListener();
                             }
                         });
                         listenForExerciseCompletion(stringId, completeQuiz);
@@ -244,28 +179,7 @@ public class quizzes_fragment extends AppCompatActivity {
                         submitAnswers.setOnClickListener(new View.OnClickListener() {
                             @Override
                             public void onClick(View v) {
-                                userAnswer = EditTextAnswers.getText().toString();
-                                if (!userAnswer.isEmpty()) {
-                                    String[] answers = userAnswer.split(",");
-                                    int correctAnswer = 0;
-                                    if (answers.length <= 3) {
-                                        answerNumber1 = answers[0].trim();
-                                        answerNumber2 = answers[1].trim();
-                                        answerNumber3 = answers[2].trim();
-                                    }
-                                    if (answerNumber1.equals(answer1)) {
-                                        correctAnswer++;
-                                    }
-                                    if (answerNumber2.equals(answer2)) {
-                                        correctAnswer++;
-                                    }
-                                    if (answerNumber3.equals(answer3)) {
-                                        correctAnswer++;
-                                    }
-                                    quizzes_fragment.this.correctAnwers.setText(fullAnswer);
-                                    score += correctAnswer;
-                                    submitAnswersForExercise(stringId, score, completeQuiz);
-                                }
+                                onClickListener();
                             }
                         });
                         listenForExerciseCompletion(stringId, completeQuiz);
@@ -286,28 +200,7 @@ public class quizzes_fragment extends AppCompatActivity {
                         submitAnswers.setOnClickListener(new View.OnClickListener() {
                             @Override
                             public void onClick(View v) {
-                                userAnswer = EditTextAnswers.getText().toString();
-                                if (!userAnswer.isEmpty()) {
-                                    String[] answers = userAnswer.split(",");
-                                    int correctAnswer = 0;
-                                    if (answers.length <= 3) {
-                                        answerNumber1 = answers[0].trim();
-                                        answerNumber2 = answers[1].trim();
-                                        answerNumber3 = answers[2].trim();
-                                    }
-                                    if (answerNumber1.equals(answer1)) {
-                                        correctAnswer++;
-                                    }
-                                    if (answerNumber2.equals(answer2)) {
-                                        correctAnswer++;
-                                    }
-                                    if (answerNumber3.equals(answer3)) {
-                                        correctAnswer++;
-                                    }
-                                    quizzes_fragment.this.correctAnwers.setText(fullAnswer);
-                                    score += correctAnswer;
-                                    submitAnswersForExercise(stringId, score, completeQuiz);
-                                }
+                                onClickListener();
                             }
                         });
                         listenForExerciseCompletion(stringId, completeQuiz);
@@ -329,28 +222,7 @@ public class quizzes_fragment extends AppCompatActivity {
                         submitAnswers.setOnClickListener(new View.OnClickListener() {
                             @Override
                             public void onClick(View v) {
-                                userAnswer = EditTextAnswers.getText().toString();
-                                if (!userAnswer.isEmpty()) {
-                                    String[] answers = userAnswer.split(",");
-                                    int correctAnswer = 0;
-                                    if (answers.length <= 3) {
-                                        answerNumber1 = answers[0].trim();
-                                        answerNumber2 = answers[1].trim();
-                                        answerNumber3 = answers[2].trim();
-                                    }
-                                    if (answerNumber1.equals(answer1)) {
-                                        correctAnswer++;
-                                    }
-                                    if (answerNumber2.equals(answer2)) {
-                                        correctAnswer++;
-                                    }
-                                    if (answerNumber3.equals(answer3)) {
-                                        correctAnswer++;
-                                    }
-                                    quizzes_fragment.this.correctAnwers.setText(fullAnswer);
-                                    score += correctAnswer;
-                                    submitAnswersForExercise(stringId, score, completeQuiz);
-                                }
+                                onClickListener();
                             }
                         });
                         listenForExerciseCompletion(stringId, completeQuiz);
@@ -370,28 +242,7 @@ public class quizzes_fragment extends AppCompatActivity {
                         submitAnswers.setOnClickListener(new View.OnClickListener() {
                             @Override
                             public void onClick(View v) {
-                                userAnswer = EditTextAnswers.getText().toString();
-                                if (!userAnswer.isEmpty()) {
-                                    String[] answers = userAnswer.split(",");
-                                    int correctAnswer = 0;
-                                    if (answers.length <= 3) {
-                                        answerNumber1 = answers[0].trim();
-                                        answerNumber2 = answers[1].trim();
-                                        answerNumber3 = answers[2].trim();
-                                    }
-                                    if (answerNumber1.equals(answer1)) {
-                                        correctAnswer++;
-                                    }
-                                    if (answerNumber2.equals(answer2)) {
-                                        correctAnswer++;
-                                    }
-                                    if (answerNumber3.equals(answer3)) {
-                                        correctAnswer++;
-                                    }
-                                    quizzes_fragment.this.correctAnwers.setText(fullAnswer);
-                                    score += correctAnswer;
-                                    submitAnswersForExercise(stringId, score, completeQuiz);
-                                }
+                                onClickListener();
                             }
                         });
                         listenForExerciseCompletion(stringId, completeQuiz);
@@ -421,28 +272,7 @@ public class quizzes_fragment extends AppCompatActivity {
                         submitAnswers.setOnClickListener(new View.OnClickListener() {
                             @Override
                             public void onClick(View v) {
-                                userAnswer = EditTextAnswers.getText().toString();
-                                if (!userAnswer.isEmpty()) {
-                                    String[] answers = userAnswer.split(",");
-                                    int correctAnswer = 0;
-                                    if (answers.length <= 3) {
-                                        answerNumber1 = answers[0].trim();
-                                        answerNumber2 = answers[1].trim();
-                                        answerNumber3 = answers[2].trim();
-                                    }
-                                    if (answerNumber1.equals(answer1)) {
-                                        correctAnswer++;
-                                    }
-                                    if (answerNumber2.equals(answer2)) {
-                                        correctAnswer++;
-                                    }
-                                    if (answerNumber3.equals(answer3)) {
-                                        correctAnswer++;
-                                    }
-                                    quizzes_fragment.this.correctAnwers.setText(fullAnswer);
-                                    score += correctAnswer;
-                                    submitAnswersForExercise(stringId, score, completeQuiz);
-                                }
+                                onClickListener();
                             }
                         });
                         listenForExerciseCompletion(stringId, completeQuiz);
@@ -459,20 +289,7 @@ public class quizzes_fragment extends AppCompatActivity {
                         submitAnswers.setOnClickListener(new View.OnClickListener() {
                             @Override
                             public void onClick(View v) {
-                                userAnswer = EditTextAnswers.getText().toString();
-                                if (!userAnswer.isEmpty()) {
-                                    String[] answers = userAnswer.split(",");
-                                    int correctAnswer = 0;
-                                    if (answers.length <= 3) {
-                                        answerNumber1 = answers[0].trim();
-                                    }
-                                    if (answerNumber1.equals(answer1)) {
-                                        correctAnswer++;
-                                    }
-                                    quizzes_fragment.this.correctAnwers.setText(fullAnswer);
-                                    score += correctAnswer;
-                                    submitAnswersForExercise(stringId, score, completeQuiz);
-                                }
+                                onClickListener();
                             }
                         });
                         listenForExerciseCompletion(stringId, completeQuiz);
@@ -491,20 +308,7 @@ public class quizzes_fragment extends AppCompatActivity {
                         submitAnswers.setOnClickListener(new View.OnClickListener() {
                             @Override
                             public void onClick(View v) {
-                                userAnswer = EditTextAnswers.getText().toString();
-                                if (!userAnswer.isEmpty()) {
-                                    String[] answers = userAnswer.split(",");
-                                    int correctAnswer = 0;
-                                    if (answers.length <= 3) {
-                                        answerNumber1 = answers[0].trim();
-                                    }
-                                    if (answerNumber1.equals(answer1)) {
-                                        correctAnswer++;
-                                    }
-                                    quizzes_fragment.this.correctAnwers.setText(fullAnswer);
-                                    score += correctAnswer;
-                                    submitAnswersForExercise(stringId, score, completeQuiz);
-                                }
+                                onClickListener();
                             }
                         });
                         listenForExerciseCompletion(stringId, completeQuiz);
@@ -528,20 +332,7 @@ public class quizzes_fragment extends AppCompatActivity {
                         submitAnswers.setOnClickListener(new View.OnClickListener() {
                             @Override
                             public void onClick(View v) {
-                                userAnswer = EditTextAnswers.getText().toString();
-                                if (!userAnswer.isEmpty()) {
-                                    String[] answers = userAnswer.split(",");
-                                    int correctAnswer = 0;
-                                    if (answers.length <= 3) {
-                                        answerNumber1 = answers[0].trim();
-                                    }
-                                    if (answerNumber1.equals(answer1)) {
-                                        correctAnswer++;
-                                    }
-                                    quizzes_fragment.this.correctAnwers.setText(fullAnswer);
-                                    score += correctAnswer;
-                                    submitAnswersForExercise(stringId, score, completeQuiz);
-                                }
+                                onClickListener();
                             }
                         });
                         listenForExerciseCompletion(stringId, completeQuiz);
@@ -558,21 +349,7 @@ public class quizzes_fragment extends AppCompatActivity {
                         submitAnswers.setOnClickListener(new View.OnClickListener() {
                             @Override
                             public void onClick(View v) {
-                                userAnswer = EditTextAnswers.getText().toString();
-                                if (!userAnswer.isEmpty()) {
-                                    String[] answers = userAnswer.split(",");
-                                    int correctAnswer = 0;
-                                    if (answers.length <= 3) {
-                                        answerNumber1 = answers[0].trim();
-                                        answerNumber2 = answers[1].trim();
-                                    }
-                                    if (answerNumber1.equals(answer1)) {
-                                        correctAnswer++;
-                                    }
-                                    quizzes_fragment.this.correctAnwers.setText(fullAnswer);
-                                    score += correctAnswer;
-                                    submitAnswersForExercise(stringId, score, completeQuiz);
-                                }
+                                onClickListener();
                             }
                         });
                         listenForExerciseCompletion(stringId, completeQuiz);
@@ -590,20 +367,7 @@ public class quizzes_fragment extends AppCompatActivity {
                         submitAnswers.setOnClickListener(new View.OnClickListener() {
                             @Override
                             public void onClick(View v) {
-                                userAnswer = EditTextAnswers.getText().toString();
-                                if (!userAnswer.isEmpty()) {
-                                    String[] answers = userAnswer.split(",");
-                                    int correctAnswer = 0;
-                                    if (answers.length <= 3) {
-                                        answerNumber1 = answers[0].trim();
-                                    }
-                                    if (answerNumber1.equals(answer1)) {
-                                        correctAnswer++;
-                                    }
-                                    quizzes_fragment.this.correctAnwers.setText(fullAnswer);
-                                    score += correctAnswer;
-                                    submitAnswersForExercise(stringId, score, completeQuiz);
-                                }
+                                onClickListener();
                             }
                         });
                         listenForExerciseCompletion(stringId, completeQuiz);
@@ -621,20 +385,7 @@ public class quizzes_fragment extends AppCompatActivity {
                         submitAnswers.setOnClickListener(new View.OnClickListener() {
                             @Override
                             public void onClick(View v) {
-                                userAnswer = EditTextAnswers.getText().toString();
-                                if (!userAnswer.isEmpty()) {
-                                    String[] answers = userAnswer.split(",");
-                                    int correctAnswer = 0;
-                                    if (answers.length <= 3) {
-                                        answerNumber1 = answers[0].trim();
-                                    }
-                                    if (answerNumber1.equals(answer1)) {
-                                        correctAnswer++;
-                                    }
-                                    quizzes_fragment.this.correctAnwers.setText(fullAnswer);
-                                    score += correctAnswer;
-                                    submitAnswersForExercise(stringId, score, completeQuiz);
-                                }
+                                onClickListener();
                             }
                         });
                         listenForExerciseCompletion(stringId, completeQuiz);
@@ -659,24 +410,7 @@ public class quizzes_fragment extends AppCompatActivity {
                         submitAnswers.setOnClickListener(new View.OnClickListener() {
                             @Override
                             public void onClick(View v) {
-                                userAnswer = EditTextAnswers.getText().toString();
-                                if (!userAnswer.isEmpty()) {
-                                    String[] answers = userAnswer.split(",");
-                                    int correctAnswer = 0;
-                                    if (answers.length <= 3) {
-                                        answerNumber1 = answers[0].trim();
-                                        answerNumber2 = answers[1].trim();
-                                    }
-                                    if (answerNumber1.equals(answer1)) {
-                                        correctAnswer++;
-                                    }
-                                    if (answerNumber2.equals(answer2)) {
-                                        correctAnswer++;
-                                    }
-                                    quizzes_fragment.this.correctAnwers.setText(fullAnswer);
-                                    score += correctAnswer;
-                                    submitAnswersForExercise(stringId, score, completeQuiz);
-                                }
+                                onClickListener();
                             }
                         });
                         listenForExerciseCompletion(stringId, completeQuiz);
@@ -695,24 +429,7 @@ public class quizzes_fragment extends AppCompatActivity {
                         submitAnswers.setOnClickListener(new View.OnClickListener() {
                             @Override
                             public void onClick(View v) {
-                                userAnswer = EditTextAnswers.getText().toString();
-                                if (!userAnswer.isEmpty()) {
-                                    String[] answers = userAnswer.split(",");
-                                    int correctAnswer = 0;
-                                    if (answers.length <= 3) {
-                                        answerNumber1 = answers[0].trim();
-                                        answerNumber2 = answers[1].trim();
-                                    }
-                                    if (answerNumber1.equals(answer1)) {
-                                        correctAnswer++;
-                                    }
-                                    if (answerNumber2.equals(answer2)) {
-                                        correctAnswer++;
-                                    }
-                                    quizzes_fragment.this.correctAnwers.setText(fullAnswer);
-                                    score += correctAnswer;
-                                    submitAnswersForExercise(stringId, score, completeQuiz);
-                                }
+                                onClickListener();
                             }
                         });
                         listenForExerciseCompletion(stringId, completeQuiz);
@@ -731,24 +448,7 @@ public class quizzes_fragment extends AppCompatActivity {
                         submitAnswers.setOnClickListener(new View.OnClickListener() {
                             @Override
                             public void onClick(View v) {
-                                userAnswer = EditTextAnswers.getText().toString();
-                                if (!userAnswer.isEmpty()) {
-                                    String[] answers = userAnswer.split(",");
-                                    int correctAnswer = 0;
-                                    if (answers.length <= 3) {
-                                        answerNumber1 = answers[0].trim();
-                                        answerNumber2 = answers[1].trim();
-                                    }
-                                    if (answerNumber1.equals(answer1)) {
-                                        correctAnswer++;
-                                    }
-                                    if (answerNumber2.equals(answer2)) {
-                                        correctAnswer++;
-                                    }
-                                    quizzes_fragment.this.correctAnwers.setText(fullAnswer);
-                                    score += correctAnswer;
-                                    submitAnswersForExercise(stringId, score, completeQuiz);
-                                }
+                                onClickListener();
                             }
                         });
                         listenForExerciseCompletion(stringId, completeQuiz);
@@ -767,20 +467,7 @@ public class quizzes_fragment extends AppCompatActivity {
                         submitAnswers.setOnClickListener(new View.OnClickListener() {
                             @Override
                             public void onClick(View v) {
-                                userAnswer = EditTextAnswers.getText().toString();
-                                if (!userAnswer.isEmpty()) {
-                                    String[] answers = userAnswer.split(",");
-                                    int correctAnswer = 0;
-                                    if (answers.length <= 3) {
-                                        answerNumber1 = answers[0].trim();
-                                    }
-                                    if (answerNumber1.equals(answer1)) {
-                                        correctAnswer++;
-                                    }
-                                    quizzes_fragment.this.correctAnwers.setText(fullAnswer);
-                                    score += correctAnswer;
-                                    submitAnswersForExercise(stringId, score, completeQuiz);
-                                }
+                                onClickListener();
                             }
                         });
                         listenForExerciseCompletion(stringId, completeQuiz);
@@ -799,20 +486,7 @@ public class quizzes_fragment extends AppCompatActivity {
                         submitAnswers.setOnClickListener(new View.OnClickListener() {
                             @Override
                             public void onClick(View v) {
-                                userAnswer = EditTextAnswers.getText().toString();
-                                if (!userAnswer.isEmpty()) {
-                                    String[] answers = userAnswer.split(",");
-                                    int correctAnswer = 0;
-                                    if (answers.length <= 3) {
-                                        answerNumber1 = answers[0].trim();
-                                    }
-                                    if (answerNumber1.equals(answer1)) {
-                                        correctAnswer++;
-                                    }
-                                    quizzes_fragment.this.correctAnwers.setText(fullAnswer);
-                                    score += correctAnswer;
-                                    submitAnswersForExercise(stringId, score, completeQuiz);
-                                }
+                                onClickListener();
                             }
                         });
                         listenForExerciseCompletion(stringId, completeQuiz);
@@ -831,24 +505,7 @@ public class quizzes_fragment extends AppCompatActivity {
                         submitAnswers.setOnClickListener(new View.OnClickListener() {
                             @Override
                             public void onClick(View v) {
-                                userAnswer = EditTextAnswers.getText().toString();
-                                if (!userAnswer.isEmpty()) {
-                                    String[] answers = userAnswer.split(",");
-                                    int correctAnswer = 0;
-                                    if (answers.length <= 3) {
-                                        answerNumber1 = answers[0].trim();
-                                        answerNumber2 = answers[1].trim();
-                                    }
-                                    if (answerNumber1.equals(answer1)) {
-                                        correctAnswer++;
-                                    }
-                                    if (answerNumber2.equals(answer2)) {
-                                        correctAnswer++;
-                                    }
-                                    quizzes_fragment.this.correctAnwers.setText(fullAnswer);
-                                    score += correctAnswer;
-                                    submitAnswersForExercise(stringId, score, completeQuiz);
-                                }
+                                onClickListener();
                             }
                         });
                         listenForExerciseCompletion(stringId, completeQuiz);
@@ -874,20 +531,7 @@ public class quizzes_fragment extends AppCompatActivity {
                         submitAnswers.setOnClickListener(new View.OnClickListener() {
                             @Override
                             public void onClick(View v) {
-                                userAnswer = EditTextAnswers.getText().toString();
-                                if (!userAnswer.isEmpty()) {
-                                    String[] answers = userAnswer.split(",");
-                                    int correctAnswer = 0;
-                                    if (answers.length <= 3) {
-                                        answerNumber1 = answers[0].trim();
-                                    }
-                                    if (answerNumber1.equals(answer1)) {
-                                        correctAnswer++;
-                                    }
-                                    quizzes_fragment.this.correctAnwers.setText(fullAnswer);
-                                    score += correctAnswer;
-                                    submitAnswersForExercise(stringId, score, completeQuiz);
-                                }
+                                onClickListener();
                             }
                         });
                         listenForExerciseCompletion(stringId, completeQuiz);
@@ -905,20 +549,7 @@ public class quizzes_fragment extends AppCompatActivity {
                         submitAnswers.setOnClickListener(new View.OnClickListener() {
                             @Override
                             public void onClick(View v) {
-                                userAnswer = EditTextAnswers.getText().toString();
-                                if (!userAnswer.isEmpty()) {
-                                    String[] answers = userAnswer.split(",");
-                                    int correctAnswer = 0;
-                                    if (answers.length <= 3) {
-                                        answerNumber1 = answers[0].trim();
-                                    }
-                                    if (answerNumber1.equals(answer1)) {
-                                        correctAnswer++;
-                                    }
-                                    quizzes_fragment.this.correctAnwers.setText(fullAnswer);
-                                    score += correctAnswer;
-                                    submitAnswersForExercise(stringId, score, completeQuiz);
-                                }
+                                onClickListener();
                             }
                         });
                         listenForExerciseCompletion(stringId, completeQuiz);
@@ -935,20 +566,7 @@ public class quizzes_fragment extends AppCompatActivity {
                         submitAnswers.setOnClickListener(new View.OnClickListener() {
                             @Override
                             public void onClick(View v) {
-                                userAnswer = EditTextAnswers.getText().toString();
-                                if (!userAnswer.isEmpty()) {
-                                    String[] answers = userAnswer.split(",");
-                                    int correctAnswer = 0;
-                                    if (answers.length <= 3) {
-                                        answerNumber1 = answers[0].trim();
-                                    }
-                                    if (answerNumber1.equals(answer1)) {
-                                        correctAnswer++;
-                                    }
-                                    quizzes_fragment.this.correctAnwers.setText(fullAnswer);
-                                    score += correctAnswer;
-                                    submitAnswersForExercise(stringId, score, completeQuiz);
-                                }
+                                onClickListener();
                             }
                         });
                         listenForExerciseCompletion(stringId, completeQuiz);
@@ -976,24 +594,7 @@ public class quizzes_fragment extends AppCompatActivity {
                         submitAnswers.setOnClickListener(new View.OnClickListener() {
                             @Override
                             public void onClick(View v) {
-                                userAnswer = EditTextAnswers.getText().toString();
-                                if (!userAnswer.isEmpty()) {
-                                    String[] answers = userAnswer.split(",");
-                                    int correctAnswer = 0;
-                                    if (answers.length <= 3) {
-                                        answerNumber1 = answers[0].trim();
-                                        answerNumber2 = answers[1].trim();
-                                    }
-                                    if (answerNumber1.equals(answer1)) {
-                                        correctAnswer++;
-                                    }
-                                    if (answerNumber2.equals(answer2)) {
-                                        correctAnswer++;
-                                    }
-                                    quizzes_fragment.this.correctAnwers.setText(fullAnswer);
-                                    score += correctAnswer;
-                                    submitAnswersForExercise(stringId, score, completeQuiz);
-                                }
+                                onClickListener();
                             }
                         });
                         listenForExerciseCompletion(stringId, completeQuiz);
@@ -1014,28 +615,7 @@ public class quizzes_fragment extends AppCompatActivity {
                         submitAnswers.setOnClickListener(new View.OnClickListener() {
                             @Override
                             public void onClick(View v) {
-                                userAnswer = EditTextAnswers.getText().toString();
-                                if (!userAnswer.isEmpty()) {
-                                    String[] answers = userAnswer.split(",");
-                                    int correctAnswer = 0;
-                                    if (answers.length <= 3) {
-                                        answerNumber1 = answers[0].trim();
-                                        answerNumber2 = answers[1].trim();
-                                        answerNumber3 = answers[2].trim();
-                                    }
-                                    if (answerNumber1.equals(answer1)) {
-                                        correctAnswer++;
-                                    }
-                                    if (answerNumber2.equals(answer2)) {
-                                        correctAnswer++;
-                                    }
-                                    if (answerNumber3.equals(answer3)) {
-                                        correctAnswer++;
-                                    }
-                                    quizzes_fragment.this.correctAnwers.setText(fullAnswer);
-                                    score += correctAnswer;
-                                    submitAnswersForExercise(stringId, score, completeQuiz);
-                                }
+                                onClickListener();
                             }
                         });
                         listenForExerciseCompletion(stringId, completeQuiz);
@@ -1064,24 +644,7 @@ public class quizzes_fragment extends AppCompatActivity {
                         submitAnswers.setOnClickListener(new View.OnClickListener() {
                             @Override
                             public void onClick(View v) {
-                                userAnswer = EditTextAnswers.getText().toString();
-                                if (!userAnswer.isEmpty()) {
-                                    String[] answers = userAnswer.split(",");
-                                    int correctAnswer = 0;
-                                    if (answers.length <= 3) {
-                                        answerNumber1 = answers[0].trim();
-                                        answerNumber2 = answers[1].trim();
-                                    }
-                                    if (answerNumber1.equals(answer1)) {
-                                        correctAnswer++;
-                                    }
-                                    if (answerNumber2.equals(answer2)) {
-                                        correctAnswer++;
-                                    }
-                                    quizzes_fragment.this.correctAnwers.setText(fullAnswer);
-                                    score += correctAnswer;
-                                    submitAnswersForExercise(stringId, score, completeQuiz);
-                                }
+                                onClickListener();
                             }
                         });
                         listenForExerciseCompletion(stringId, completeQuiz);
@@ -1103,24 +666,7 @@ public class quizzes_fragment extends AppCompatActivity {
                         submitAnswers.setOnClickListener(new View.OnClickListener() {
                             @Override
                             public void onClick(View v) {
-                                userAnswer = EditTextAnswers.getText().toString();
-                                if (!userAnswer.isEmpty()) {
-                                    String[] answers = userAnswer.split(",");
-                                    int correctAnswer = 0;
-                                    if (answers.length <= 3) {
-                                        answerNumber1 = answers[0].trim();
-                                        answerNumber2 = answers[1].trim();
-                                    }
-                                    if (answerNumber1.equals(answer1)) {
-                                        correctAnswer++;
-                                    }
-                                    if (answerNumber2.equals(answer2)) {
-                                        correctAnswer++;
-                                    }
-                                    quizzes_fragment.this.correctAnwers.setText(fullAnswer);
-                                    score += correctAnswer;
-                                    submitAnswersForExercise(stringId, score, completeQuiz);
-                                }
+                                onClickListener();
                             }
                         });
                         listenForExerciseCompletion(stringId, completeQuiz);
@@ -1145,28 +691,7 @@ public class quizzes_fragment extends AppCompatActivity {
                         submitAnswers.setOnClickListener(new View.OnClickListener() {
                             @Override
                             public void onClick(View v) {
-                                userAnswer = EditTextAnswers.getText().toString();
-                                if (!userAnswer.isEmpty()) {
-                                    String[] answers = userAnswer.split(",");
-                                    int correctAnswer = 0;
-                                    if (answers.length <= 3) {
-                                        answerNumber1 = answers[0].trim();
-                                        answerNumber2 = answers[1].trim();
-                                        answerNumber3 = answers[2].trim();
-                                    }
-                                    if (answerNumber1.equals(answer1)) {
-                                        correctAnswer++;
-                                    }
-                                    if (answerNumber2.equals(answer2)) {
-                                        correctAnswer++;
-                                    }
-                                    if (answerNumber3.equals(answer3)) {
-                                        correctAnswer++;
-                                    }
-                                    quizzes_fragment.this.correctAnwers.setText(fullAnswer);
-                                    score += correctAnswer;
-                                    submitAnswersForExercise(stringId, score, completeQuiz);
-                                }
+                                onClickListener();
                             }
                         });
                         listenForExerciseCompletion(stringId, completeQuiz);
@@ -1194,28 +719,7 @@ public class quizzes_fragment extends AppCompatActivity {
                         submitAnswers.setOnClickListener(new View.OnClickListener() {
                             @Override
                             public void onClick(View v) {
-                                userAnswer = EditTextAnswers.getText().toString();
-                                if (!userAnswer.isEmpty()) {
-                                    String[] answers = userAnswer.split(",");
-                                    int correctAnswer = 0;
-                                    if (answers.length <= 3) {
-                                        answerNumber1 = answers[0].trim();
-                                        answerNumber2 = answers[1].trim();
-                                        answerNumber3 = answers[2].trim();
-                                    }
-                                    if (answerNumber1.equals(answer1)) {
-                                        correctAnswer++;
-                                    }
-                                    if (answerNumber2.equals(answer2)) {
-                                        correctAnswer++;
-                                    }
-                                    if (answerNumber3.equals(answer3)) {
-                                        correctAnswer++;
-                                    }
-                                    quizzes_fragment.this.correctAnwers.setText(fullAnswer);
-                                    score += correctAnswer;
-                                    submitAnswersForExercise(stringId, score, completeQuiz);
-                                }
+                                onClickListener();
                             }
                         });
                         listenForExerciseCompletion(stringId, completeQuiz);
@@ -1236,28 +740,7 @@ public class quizzes_fragment extends AppCompatActivity {
                         submitAnswers.setOnClickListener(new View.OnClickListener() {
                             @Override
                             public void onClick(View v) {
-                                userAnswer = EditTextAnswers.getText().toString();
-                                if (!userAnswer.isEmpty()) {
-                                    String[] answers = userAnswer.split(",");
-                                    int correctAnswer = 0;
-                                    if (answers.length <= 3) {
-                                        answerNumber1 = answers[0].trim();
-                                        answerNumber2 = answers[1].trim();
-                                        answerNumber3 = answers[2].trim();
-                                    }
-                                    if (answerNumber1.equals(answer1)) {
-                                        correctAnswer++;
-                                    }
-                                    if (answerNumber2.equals(answer2)) {
-                                        correctAnswer++;
-                                    }
-                                    if (answerNumber3.equals(answer3)) {
-                                        correctAnswer++;
-                                    }
-                                    quizzes_fragment.this.correctAnwers.setText(fullAnswer);
-                                    score += correctAnswer;
-                                    submitAnswersForExercise(stringId, score, completeQuiz);
-                                }
+                                onClickListener();
                             }
                         });
                         listenForExerciseCompletion(stringId, completeQuiz);
@@ -1291,28 +774,7 @@ public class quizzes_fragment extends AppCompatActivity {
                         submitAnswers.setOnClickListener(new View.OnClickListener() {
                             @Override
                             public void onClick(View v) {
-                                userAnswer = EditTextAnswers.getText().toString();
-                                if (!userAnswer.isEmpty()) {
-                                    String[] answers = userAnswer.split(",");
-                                    int correctAnswer = 0;
-                                    if (answers.length <= 3) {
-                                        answerNumber1 = answers[0].trim();
-                                        answerNumber2 = answers[1].trim();
-                                        answerNumber3 = answers[2].trim();
-                                    }
-                                    if (answerNumber1.equals(answer1)) {
-                                        correctAnswer++;
-                                    }
-                                    if (answerNumber2.equals(answer2)) {
-                                        correctAnswer++;
-                                    }
-                                    if (answerNumber3.equals(answer3)) {
-                                        correctAnswer++;
-                                    }
-                                    quizzes_fragment.this.correctAnwers.setText(fullAnswer);
-                                    score += correctAnswer;
-                                    submitAnswersForExercise(stringId, score, completeQuiz);
-                                }
+                                onClickListener();
                             }
                         });
                         listenForExerciseCompletion(stringId, completeQuiz);
@@ -1342,28 +804,7 @@ public class quizzes_fragment extends AppCompatActivity {
                         submitAnswers.setOnClickListener(new View.OnClickListener() {
                             @Override
                             public void onClick(View v) {
-                                userAnswer = EditTextAnswers.getText().toString();
-                                if (!userAnswer.isEmpty()) {
-                                    String[] answers = userAnswer.split(",");
-                                    int correctAnswer = 0;
-                                    if (answers.length <= 3) {
-                                        answerNumber1 = answers[0].trim();
-                                        answerNumber2 = answers[1].trim();
-                                        answerNumber3 = answers[2].trim();
-                                    }
-                                    if (answerNumber1.equals(answer1)) {
-                                        correctAnswer++;
-                                    }
-                                    if (answerNumber2.equals(answer2)) {
-                                        correctAnswer++;
-                                    }
-                                    if (answerNumber3.equals(answer3)) {
-                                        correctAnswer++;
-                                    }
-                                    quizzes_fragment.this.correctAnwers.setText(fullAnswer);
-                                    score += correctAnswer;
-                                    submitAnswersForExercise(stringId, score, completeQuiz);
-                                }
+                                onClickListener();
                             }
                         });
                         listenForExerciseCompletion(stringId, completeQuiz);
@@ -1392,24 +833,7 @@ public class quizzes_fragment extends AppCompatActivity {
                         submitAnswers.setOnClickListener(new View.OnClickListener() {
                             @Override
                             public void onClick(View v) {
-                                userAnswer = EditTextAnswers.getText().toString();
-                                if (!userAnswer.isEmpty()) {
-                                    String[] answers = userAnswer.split(",");
-                                    int correctAnswer = 0;
-                                    if (answers.length <= 3) {
-                                        answerNumber1 = answers[0].trim();
-                                        answerNumber2 = answers[1].trim();
-                                    }
-                                    if (answerNumber1.equals(answer1)) {
-                                        correctAnswer++;
-                                    }
-                                    if (answerNumber2.equals(answer2)) {
-                                        correctAnswer++;
-                                    }
-                                    quizzes_fragment.this.correctAnwers.setText(fullAnswer);
-                                    score += correctAnswer;
-                                    submitAnswersForExercise(stringId, score, completeQuiz);
-                                }
+                                onClickListener();
                             }
                         });
                         listenForExerciseCompletion(stringId, completeQuiz);
@@ -1433,28 +857,7 @@ public class quizzes_fragment extends AppCompatActivity {
                         submitAnswers.setOnClickListener(new View.OnClickListener() {
                             @Override
                             public void onClick(View v) {
-                                userAnswer = EditTextAnswers.getText().toString();
-                                if (!userAnswer.isEmpty()) {
-                                    String[] answers = userAnswer.split(",");
-                                    int correctAnswer = 0;
-                                    if (answers.length <= 3) {
-                                        answerNumber1 = answers[0].trim();
-                                        answerNumber2 = answers[1].trim();
-                                        answerNumber3 = answers[2].trim();
-                                    }
-                                    if (answerNumber1.equals(answer1)) {
-                                        correctAnswer++;
-                                    }
-                                    if (answerNumber2.equals(answer2)) {
-                                        correctAnswer++;
-                                    }
-                                    if (answerNumber3.equals(answer3)) {
-                                        correctAnswer++;
-                                    }
-                                    quizzes_fragment.this.correctAnwers.setText(fullAnswer);
-                                    score += correctAnswer;
-                                    submitAnswersForExercise(stringId, score, completeQuiz);
-                                }
+                                onClickListener();
                             }
                         });
                         listenForExerciseCompletion(stringId, completeQuiz);
@@ -1475,28 +878,7 @@ public class quizzes_fragment extends AppCompatActivity {
                         submitAnswers.setOnClickListener(new View.OnClickListener() {
                             @Override
                             public void onClick(View v) {
-                                userAnswer = EditTextAnswers.getText().toString();
-                                if (!userAnswer.isEmpty()) {
-                                    String[] answers = userAnswer.split(",");
-                                    int correctAnswer = 0;
-                                    if (answers.length <= 3) {
-                                        answerNumber1 = answers[0].trim();
-                                        answerNumber2 = answers[1].trim();
-                                        answerNumber3 = answers[2].trim();
-                                    }
-                                    if (answerNumber1.equals(answer1)) {
-                                        correctAnswer++;
-                                    }
-                                    if (answerNumber2.equals(answer2)) {
-                                        correctAnswer++;
-                                    }
-                                    if (answerNumber3.equals(answer3)) {
-                                        correctAnswer++;
-                                    }
-                                    quizzes_fragment.this.correctAnwers.setText(fullAnswer);
-                                    score += correctAnswer;
-                                    submitAnswersForExercise(stringId, score, completeQuiz);
-                                }
+                                onClickListener();
                             }
                         });
                         listenForExerciseCompletion(stringId, completeQuiz);
@@ -1518,28 +900,7 @@ public class quizzes_fragment extends AppCompatActivity {
                         submitAnswers.setOnClickListener(new View.OnClickListener() {
                             @Override
                             public void onClick(View v) {
-                                userAnswer = EditTextAnswers.getText().toString();
-                                if (!userAnswer.isEmpty()) {
-                                    String[] answers = userAnswer.split(",");
-                                    int correctAnswer = 0;
-                                    if (answers.length <= 3) {
-                                        answerNumber1 = answers[0].trim();
-                                        answerNumber2 = answers[1].trim();
-                                        answerNumber3 = answers[2].trim();
-                                    }
-                                    if (answerNumber1.equals(answer1)) {
-                                        correctAnswer++;
-                                    }
-                                    if (answerNumber2.equals(answer2)) {
-                                        correctAnswer++;
-                                    }
-                                    if (answerNumber3.equals(answer3)) {
-                                        correctAnswer++;
-                                    }
-                                    quizzes_fragment.this.correctAnwers.setText(fullAnswer);
-                                    score += correctAnswer;
-                                    submitAnswersForExercise(stringId, score, completeQuiz);
-                                }
+                                onClickListener();
                             }
                         });
                         listenForExerciseCompletion(stringId, completeQuiz);
@@ -1563,28 +924,7 @@ public class quizzes_fragment extends AppCompatActivity {
                         submitAnswers.setOnClickListener(new View.OnClickListener() {
                             @Override
                             public void onClick(View v) {
-                                userAnswer = EditTextAnswers.getText().toString();
-                                if (!userAnswer.isEmpty()) {
-                                    String[] answers = userAnswer.split(",");
-                                    int correctAnswer = 0;
-                                    if (answers.length <= 3) {
-                                        answerNumber1 = answers[0].trim();
-                                        answerNumber2 = answers[1].trim();
-                                        answerNumber3 = answers[2].trim();
-                                    }
-                                    if (answerNumber1.equals(answer1)) {
-                                        correctAnswer++;
-                                    }
-                                    if (answerNumber2.equals(answer2)) {
-                                        correctAnswer++;
-                                    }
-                                    if (answerNumber3.equals(answer3)) {
-                                        correctAnswer++;
-                                    }
-                                    quizzes_fragment.this.correctAnwers.setText(fullAnswer);
-                                    score += correctAnswer;
-                                    submitAnswersForExercise(stringId, score, completeQuiz);
-                                }
+                                onClickListener();
                             }
                         });
                         listenForExerciseCompletion(stringId, completeQuiz);
@@ -1607,24 +947,7 @@ public class quizzes_fragment extends AppCompatActivity {
                         submitAnswers.setOnClickListener(new View.OnClickListener() {
                             @Override
                             public void onClick(View v) {
-                                userAnswer = EditTextAnswers.getText().toString();
-                                if (!userAnswer.isEmpty()) {
-                                    String[] answers = userAnswer.split(",");
-                                    int correctAnswer = 0;
-                                    if (answers.length <= 3) {
-                                        answerNumber1 = answers[0].trim();
-                                        answerNumber2 = answers[1].trim();
-                                    }
-                                    if (answerNumber1.equals(answer1)) {
-                                        correctAnswer++;
-                                    }
-                                    if (answerNumber2.equals(answer2)) {
-                                        correctAnswer++;
-                                    }
-                                    quizzes_fragment.this.correctAnwers.setText(fullAnswer);
-                                    score += correctAnswer;
-                                    submitAnswersForExercise(stringId, score, completeQuiz);
-                                }
+                                onClickListener();
                             }
                         });
                         listenForExerciseCompletion(stringId, completeQuiz);
@@ -1649,24 +972,7 @@ public class quizzes_fragment extends AppCompatActivity {
                         submitAnswers.setOnClickListener(new View.OnClickListener() {
                             @Override
                             public void onClick(View v) {
-                                userAnswer = EditTextAnswers.getText().toString();
-                                if (!userAnswer.isEmpty()) {
-                                    String[] answers = userAnswer.split(",");
-                                    int correctAnswer = 0;
-                                    if (answers.length <= 3) {
-                                        answerNumber1 = answers[0].trim();
-                                        answerNumber2 = answers[1].trim();
-                                    }
-                                    if (answerNumber1.equals(answer1)) {
-                                        correctAnswer++;
-                                    }
-                                    if (answerNumber2.equals(answer2)) {
-                                        correctAnswer++;
-                                    }
-                                    quizzes_fragment.this.correctAnwers.setText(fullAnswer);
-                                    score += correctAnswer;
-                                    submitAnswersForExercise(stringId, score, completeQuiz);
-                                }
+                                onClickListener();
                             }
                         });
                         listenForExerciseCompletion(stringId, completeQuiz);
@@ -1685,24 +991,7 @@ public class quizzes_fragment extends AppCompatActivity {
                         submitAnswers.setOnClickListener(new View.OnClickListener() {
                             @Override
                             public void onClick(View v) {
-                                userAnswer = EditTextAnswers.getText().toString();
-                                if (!userAnswer.isEmpty()) {
-                                    String[] answers = userAnswer.split(",");
-                                    int correctAnswer = 0;
-                                    if (answers.length <= 3) {
-                                        answerNumber1 = answers[0].trim();
-                                        answerNumber2 = answers[1].trim();
-                                    }
-                                    if (answerNumber1.equals(answer1)) {
-                                        correctAnswer++;
-                                    }
-                                    if (answerNumber2.equals(answer2)) {
-                                        correctAnswer++;
-                                    }
-                                    quizzes_fragment.this.correctAnwers.setText(fullAnswer);
-                                    score += correctAnswer;
-                                    submitAnswersForExercise(stringId, score, completeQuiz);
-                                }
+                                onClickListener();
                             }
                         });
                         listenForExerciseCompletion(stringId, completeQuiz);
@@ -1722,24 +1011,7 @@ public class quizzes_fragment extends AppCompatActivity {
                         submitAnswers.setOnClickListener(new View.OnClickListener() {
                             @Override
                             public void onClick(View v) {
-                                userAnswer = EditTextAnswers.getText().toString();
-                                if (!userAnswer.isEmpty()) {
-                                    String[] answers = userAnswer.split(",");
-                                    int correctAnswer = 0;
-                                    if (answers.length <= 3) {
-                                        answerNumber1 = answers[0].trim();
-                                        answerNumber2 = answers[1].trim();
-                                    }
-                                    if (answerNumber1.equals(answer1)) {
-                                        correctAnswer++;
-                                    }
-                                    if (answerNumber2.equals(answer2)) {
-                                        correctAnswer++;
-                                    }
-                                    quizzes_fragment.this.correctAnwers.setText(fullAnswer);
-                                    score += correctAnswer;
-                                    submitAnswersForExercise(stringId, score, completeQuiz);
-                                }
+                                onClickListener();
                             }
                         });
                         listenForExerciseCompletion(stringId, completeQuiz);
@@ -1757,20 +1029,7 @@ public class quizzes_fragment extends AppCompatActivity {
                         submitAnswers.setOnClickListener(new View.OnClickListener() {
                             @Override
                             public void onClick(View v) {
-                                userAnswer = EditTextAnswers.getText().toString();
-                                if (!userAnswer.isEmpty()) {
-                                    String[] answers = userAnswer.split(",");
-                                    int correctAnswer = 0;
-                                    if (answers.length <= 3) {
-                                        answerNumber1 = answers[0].trim();
-                                    }
-                                    if (answerNumber1.equals(answer1)) {
-                                        correctAnswer++;
-                                    }
-                                    quizzes_fragment.this.correctAnwers.setText(fullAnswer);
-                                    score += correctAnswer;
-                                    submitAnswersForExercise(stringId, score, completeQuiz);
-                                }
+                                onClickListener();
                             }
                         });
                         listenForExerciseCompletion(stringId, completeQuiz);
@@ -1792,28 +1051,7 @@ public class quizzes_fragment extends AppCompatActivity {
                         submitAnswers.setOnClickListener(new View.OnClickListener() {
                             @Override
                             public void onClick(View v) {
-                                userAnswer = EditTextAnswers.getText().toString();
-                                if (!userAnswer.isEmpty()) {
-                                    String[] answers = userAnswer.split(",");
-                                    int correctAnswer = 0;
-                                    if (answers.length <= 3) {
-                                        answerNumber1 = answers[0].trim();
-                                        answerNumber2 = answers[1].trim();
-                                        answerNumber3 = answers[2].trim();
-                                    }
-                                    if (answerNumber1.equals(answer1)) {
-                                        correctAnswer++;
-                                    }
-                                    if (answerNumber2.equals(answer2)) {
-                                        correctAnswer++;
-                                    }
-                                    if (answerNumber3.equals(answer3)) {
-                                        correctAnswer++;
-                                    }
-                                    quizzes_fragment.this.correctAnwers.setText(fullAnswer);
-                                    score += correctAnswer;
-                                    submitAnswersForExercise(stringId, score, completeQuiz);
-                                }
+                                onClickListener();
                             }
                         });
                         listenForExerciseCompletion(stringId, completeQuiz);
@@ -1830,20 +1068,7 @@ public class quizzes_fragment extends AppCompatActivity {
                         submitAnswers.setOnClickListener(new View.OnClickListener() {
                             @Override
                             public void onClick(View v) {
-                                userAnswer = EditTextAnswers.getText().toString();
-                                if (!userAnswer.isEmpty()) {
-                                    String[] answers = userAnswer.split(",");
-                                    int correctAnswer = 0;
-                                    if (answers.length <= 3) {
-                                        answerNumber1 = answers[0].trim();
-                                    }
-                                    if (answerNumber1.equals(answer1)) {
-                                        correctAnswer++;
-                                    }
-                                    quizzes_fragment.this.correctAnwers.setText(fullAnswer);
-                                    score += correctAnswer;
-                                    submitAnswersForExercise(stringId, score, completeQuiz);
-                                }
+                                onClickListener();
                             }
                         });
                         listenForExerciseCompletion(stringId, completeQuiz);
@@ -1915,6 +1140,7 @@ public class quizzes_fragment extends AppCompatActivity {
                             Boolean isDone = document.getBoolean("isDone");
                             if (isDone != null && isDone) {
                                 completeQuiz.setText("Completed");
+                                Toast.makeText(quizzes_fragment.this, "You have answered this exercise.", Toast.LENGTH_SHORT).show();
                             } else {
                                 Log.d("UserData", "isDone field does not exist or its value is false");
                             }
@@ -1923,5 +1149,37 @@ public class quizzes_fragment extends AppCompatActivity {
                         }
                     }
                 });
+    }
+    public void onClickListener() {
+        userAnswer = EditTextAnswers.getText().toString();
+        if (!userAnswer.isEmpty()) {
+            String[] answers = userAnswer.split(",");
+            int correctAnswer = 0;
+
+            String answerNumber1 = "", answerNumber2 = "", answerNumber3 = "";
+
+            if (answers.length > 0) {
+                answerNumber1 = answers[0].trim();
+            }
+            if (answers.length > 1) {
+                answerNumber2 = answers[1].trim();
+            }
+            if (answers.length > 2) {
+                answerNumber3 = answers[2].trim();
+            }
+
+            if (answerNumber1.equals(answer1)) {
+                correctAnswer++;
+            }
+            if (answerNumber2.equals(answer2)) {
+                correctAnswer++;
+            }
+            if (answerNumber3.equals(answer3)) {
+                correctAnswer++;
+            }
+            quizzes_fragment.this.correctAnwers.setText(fullAnswer);
+            score += correctAnswer;
+            submitAnswersForExercise(stringId, score, completeQuiz);
+        }
     }
 }
