@@ -101,7 +101,7 @@
         android:layout_width="274dp"
         android:layout_height="41dp"
         android:backgroundTint="#030870"
-        android:hint="Date of Birth"
+        android:hint="Date of Birth (mm-dd-yyyy)"
         android:textColor="#002067"
         android:textColorHint="#4D033E95"
         android:textStyle="bold"

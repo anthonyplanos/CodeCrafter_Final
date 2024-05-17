@@ -1,6 +1,7 @@
 package com.example.CodeCrafter;
 
 import android.content.Intent;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -1111,6 +1112,7 @@ public class quizzes_fragment extends AppCompatActivity {
                                             Log.d("UserData", "DocumentSnapshot added with ID: " + exerciseId);
                                             EditTextAnswers.setText("");
                                             completeQuiz.setText("Completed");
+                                            completeQuiz.setTextColor(Color.parseColor("#F89253"));
                                         }
                                     })
                                     .addOnFailureListener(new OnFailureListener() {
@@ -1140,6 +1142,7 @@ public class quizzes_fragment extends AppCompatActivity {
                             Boolean isDone = document.getBoolean("isDone");
                             if (isDone != null && isDone) {
                                 completeQuiz.setText("Completed");
+                                completeQuiz.setTextColor(Color.parseColor("#F89253"));
                                 Toast.makeText(quizzes_fragment.this, "You have answered this exercise.", Toast.LENGTH_SHORT).show();
                             } else {
                                 Log.d("UserData", "isDone field does not exist or its value is false");

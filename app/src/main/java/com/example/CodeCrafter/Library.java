@@ -1,6 +1,7 @@
 package com.example.CodeCrafter;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.graphics.Color;
 import android.graphics.drawable.GradientDrawable;
 import android.os.Bundle;
 import android.text.Editable;
@@ -195,6 +196,9 @@ public class Library extends AppCompatActivity {
                         TextView titleView = new TextView(Library.this);
                         TextView contentView = new TextView(Library.this);
                         TextView timeView = new TextView(Library.this);
+                        titleView.setTextColor(Color.BLACK);
+                        contentView.setTextColor(Color.BLACK);
+                        timeView.setTextColor(Color.BLACK);
                         Notes notes = new Notes(noteTitle, noteContent, currentDate);
                         String title = notes.getTitle();
                         String content = notes.getContent();
@@ -282,7 +286,7 @@ public class Library extends AppCompatActivity {
                     ImageView imageView = new ImageView(Library.this);
                     imageView.setImageResource(R.drawable.empty);
                     imageView.setScaleType(ImageView.ScaleType.FIT_CENTER);
-                    imageView.setAlpha(0.5f);
+                    imageView.setAlpha(0.25f);
 
                     LinearLayout.LayoutParams params = new LinearLayout.LayoutParams(
                             LinearLayout.LayoutParams.MATCH_PARENT,
