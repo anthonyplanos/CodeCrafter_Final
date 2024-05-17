@@ -1,10 +1,10 @@
 package com.example.CodeCrafter;
+
 import android.content.Intent;
 import android.content.pm.PackageManager;
-import android.database.Cursor;
 import android.net.Uri;
+import android.os.Build;
 import android.os.Bundle;
-import android.provider.MediaStore;
 import android.util.Log;
 import android.view.MenuItem;
 import android.view.View;
@@ -13,10 +13,12 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 import android.Manifest;
+
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.ActivityCompat;
 import androidx.core.content.ContextCompat;
+
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
@@ -34,10 +36,13 @@ import com.google.firebase.storage.FirebaseStorage;
 import com.google.firebase.storage.StorageReference;
 import com.google.firebase.storage.UploadTask;
 import com.squareup.picasso.Picasso;
+
 import org.jetbrains.annotations.Nullable;
+
 import java.util.HashMap;
 import java.util.Map;
 import java.util.UUID;
+
 public class Account extends AppCompatActivity {
     BottomNavigationView bottomNavigationView;
     FirebaseAuth firebaseAuth = FirebaseAuth.getInstance();
@@ -69,29 +74,11 @@ public class Account extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_account);
 
-//        Uri uri = MediaStore.Images.Media.EXTERNAL_CONTENT_URI;
-//        String[] projection = { MediaStore.Images.Media.DATA };
-//        Cursor cursor = getContentResolver().query(uri, projection, null, null, null);
-//
-//        if (cursor != null) {
-//            int columnIndex = cursor.getColumnIndex(MediaStore.Images.Media.DATA);
-//            if (columnIndex != -1) {
-//                while (cursor.moveToNext()) {
-//                    String imagePath = cursor.getString(columnIndex);
-//                    ImageView profilePictureImageView = findViewById(R.id.ProfilePicture);
-//                    Picasso.get().load("file://" + imagePath).into(profilePictureImageView);
-//                }
-//            } else {
-//                Log.e("TAG", "Column index not found");
-//            }
-//            cursor.close();
-//        } else {
-//            Log.e("TAG", "Cursor is null");
-//        }
-
         userScore = findViewById(R.id.userScore);
+
         FirebaseAuth auth = FirebaseAuth.getInstance();
         FirebaseUser user = auth.getCurrentUser();
+
         if (user != null) {
             email = user.getEmail();
             Log.d("CurrentUserEmail", "Email: " + email);
@@ -101,8 +88,10 @@ public class Account extends AppCompatActivity {
         } else {
             Log.d("CurrentUserEmail", "No user signed in");
         }
+
         findingViewById();
         getCurrentUser();
+
         Button signOutButton = findViewById(R.id.signOut_Button);
         signOutButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -114,6 +103,7 @@ public class Account extends AppCompatActivity {
                 finish();
             }
         });
+
         bottomNavigationView = findViewById(R.id.bottomNavigator);
         bottomNavigationView.setSelectedItemId(R.id.account);
         bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
@@ -143,10 +133,18 @@ public class Account extends AppCompatActivity {
         ProfilePicture.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (ContextCompat.checkSelfPermission(Account.this, Manifest.permission.READ_EXTERNAL_STORAGE) != PackageManager.PERMISSION_GRANTED) {
-                    ActivityCompat.requestPermissions(Account.this, new String[]{Manifest.permission.READ_EXTERNAL_STORAGE}, REQUEST_CODE_PERMISSION);
+                if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU) {
+                    if (ContextCompat.checkSelfPermission(Account.this, Manifest.permission.READ_MEDIA_IMAGES) != PackageManager.PERMISSION_GRANTED) {
+                        ActivityCompat.requestPermissions(Account.this, new String[]{Manifest.permission.READ_MEDIA_IMAGES}, REQUEST_CODE_PERMISSION);
+                    } else {
+                        openGallery();
+                    }
                 } else {
-                    openGallery();
+                    if (ContextCompat.checkSelfPermission(Account.this, Manifest.permission.READ_EXTERNAL_STORAGE) != PackageManager.PERMISSION_GRANTED) {
+                        ActivityCompat.requestPermissions(Account.this, new String[]{Manifest.permission.READ_EXTERNAL_STORAGE}, REQUEST_CODE_PERMISSION);
+                    } else {
+                        openGallery();
+                    }
                 }
             }
         });
@@ -154,7 +152,7 @@ public class Account extends AppCompatActivity {
             @Override
             public boolean onLongClick(View v) {
                 loadProfilePicture();
-                Toast.makeText(Account.this, "You initiate a long press gesture on this ImageView.", Toast.LENGTH_SHORT).show();
+                Toast.makeText(Account.this, "You long press this ImageView", Toast.LENGTH_SHORT).show();
                 return true;
             }
         });
@@ -179,6 +177,7 @@ public class Account extends AppCompatActivity {
                     storedGender = document.getString("gender");
                     storedMobile = document.getString("mobile");
                     storedUsername = document.getString("username");
+
                     Username.setText(storedUsername);
                     Gender.setText(storedGender);
                     Age.setText(storedAge);
@@ -193,6 +192,7 @@ public class Account extends AppCompatActivity {
     private void getCurrentUser() {
         FirebaseAuth auth = FirebaseAuth.getInstance();
         FirebaseUser user = auth.getCurrentUser();
+
         if (user != null) {
             String email = user.getEmail();
             Log.d("CurrentUserEmail", "Email: " + email);
@@ -208,6 +208,7 @@ public class Account extends AppCompatActivity {
         intent.setAction(Intent.ACTION_GET_CONTENT);
         startActivityForResult(Intent.createChooser(intent, "Select Picture"), PICK_IMAGE_REQUEST);
     }
+    @Override
     public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {
         super.onRequestPermissionsResult(requestCode, permissions, grantResults);
         if (requestCode == REQUEST_CODE_PERMISSION) {
@@ -221,8 +222,10 @@ public class Account extends AppCompatActivity {
     @Override
     protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
+
         if (requestCode == PICK_IMAGE_REQUEST && resultCode == RESULT_OK && data != null && data.getData() != null) {
             Uri imageUri = data.getData();
+
             database.collection("UserImages").document(imageCollectionPath).get().addOnSuccessListener(new OnSuccessListener<DocumentSnapshot>() {
                 @Override
                 public void onSuccess(DocumentSnapshot documentSnapshot) {
@@ -297,9 +300,11 @@ public class Account extends AppCompatActivity {
                     public void onSuccess(Uri uri) {
                         String imageUrl = uri.toString();
                         String id = generateRandomId();
+
                         Map<String, Object> imageMap = new HashMap<>();
                         imageMap.put("imageUrl", imageUrl);
                         imageMap.put("id", id);
+
                         database.collection("UserImages").document(imageCollectionPath).set(imageMap)
                                 .addOnSuccessListener(new OnSuccessListener<Void>() {
                                     @Override
@@ -337,9 +342,11 @@ public class Account extends AppCompatActivity {
                     public void onSuccess(Uri uri) {
                         String imageUrl = uri.toString();
                         String id = generateRandomId();
+
                         Map<String, Object> imageMap = new HashMap<>();
                         imageMap.put("imageUrl", imageUrl);
                         imageMap.put("id", id);
+
                         database.collection("UserImages").document(imageCollectionPath).set(imageMap)
                                 .addOnSuccessListener(new OnSuccessListener<Void>() {
                                     @Override
