@@ -111,6 +111,8 @@ public class EditNotes extends AppCompatActivity {
                                             if(task.isSuccessful()) {
                                                 showDialog();
                                                 startActivity(new Intent(EditNotes.this, Library.class));
+                                                EditTitle.setText("");
+                                                EditContent.setText("");
                                                 finish();
                                             } else {
                                                 Log.e("elseFailed", String.valueOf(task.getException()));

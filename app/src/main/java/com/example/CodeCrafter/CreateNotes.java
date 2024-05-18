@@ -96,7 +96,10 @@ public class CreateNotes extends AppCompatActivity {
                                 Log.e("CreateNotes", documentReference.getId());
                                 showDialog();
                                 startActivity(new Intent(CreateNotes.this, Library.class));
+                                NotesTitle.setText("");
+                                NotesContent.setText("");
                                 finish();
+
                             }
                         }).addOnFailureListener(new OnFailureListener() {
                             @Override

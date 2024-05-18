@@ -34,17 +34,17 @@ public class Quizzes extends AppCompatActivity {
         expandableListView = findViewById(R.id.elistView);
 
         List<Group> groups = new ArrayList<>();
-        groups.add(new Group("Java Syntax", Arrays.asList("Example 1", "Example 2"), R.drawable.quiz_icon1));
-        groups.add(new Group("Java Variables", Arrays.asList("Example 1", "Example 2","Example 3", "Example 4", "Example 5"), R.drawable.quiz_icon2));
-        groups.add(new Group("Java Data Types", Arrays.asList("Example 1", "Example 2","Example 3"), R.drawable.quiz_icon3));
-        groups.add(new Group("Java Operators", Arrays.asList("Example 1", "Example 2","Example 3", "Example 4"), R.drawable.quiz_icon4));
-        groups.add(new Group("Java Strings", Arrays.asList("Example 1", "Example 2","Example 3", "Example 4", "Example 5", "Example 6"), R.drawable.quiz_icon5));
-        groups.add(new Group("Java Math", Arrays.asList("Example 1", "Example 2","Example 3"), R.drawable.quiz_icon6));
-        groups.add(new Group("Java Booleans", Arrays.asList("Example 1", "Example 2"), R.drawable.quiz_icon7));
-        groups.add(new Group("Java If...Else", Arrays.asList("Example 1", "Example 2","Example 3", "Example 4", "Example 5"), R.drawable.quiz_icon8));
-        groups.add(new Group("Java Switch", Arrays.asList("Example 1", "Example 2"), R.drawable.quiz_icon9));
-        groups.add(new Group("Java Loops", Arrays.asList("Example 1", "Example 2","Example 3", "Example 4", "Example 5", "Example 6"), R.drawable.quiz_icon10));
-        groups.add(new Group("Java Arrays", Arrays.asList("Example 1", "Example 2","Example 3", "Example 4", "Example 5", "Example 6"), R.drawable.quiz_icon11));
+        groups.add(new Group("Java Syntax", Arrays.asList("Exercise 1", "Exercise 2"), R.drawable.quiz_icon1));
+        groups.add(new Group("Java Variables", Arrays.asList("Exercise 1", "Exercise 2","Exercise 3", "Exercise 4", "Exercise 5"), R.drawable.quiz_icon2));
+        groups.add(new Group("Java Data Types", Arrays.asList("Exercise 1", "Exercise 2","Exercise 3"), R.drawable.quiz_icon3));
+        groups.add(new Group("Java Operators", Arrays.asList("Exercise 1", "Exercise 2","Exercise 3", "Exercise 4"), R.drawable.quiz_icon4));
+        groups.add(new Group("Java Strings", Arrays.asList("Exercise 1", "Exercise 2","Exercise 3", "Exercise 4", "Exercise 5", "Example 6"), R.drawable.quiz_icon5));
+        groups.add(new Group("Java Math", Arrays.asList("Exercise 1", "Exercise 2","Exercise 3"), R.drawable.quiz_icon6));
+        groups.add(new Group("Java Booleans", Arrays.asList("Exercise 1", "Exercise 2"), R.drawable.quiz_icon7));
+        groups.add(new Group("Java If...Else", Arrays.asList("Exercise 1", "Exercise 2","Exercise 3", "Exercise 4", "Exercise 5"), R.drawable.quiz_icon8));
+        groups.add(new Group("Java Switch", Arrays.asList("Exercise 1", "Exercise 2"), R.drawable.quiz_icon9));
+        groups.add(new Group("Java Loops", Arrays.asList("Exercise 1", "Exercise 2","Exercise 3", "Exercise 4", "Exercise 5", "Exercise 6"), R.drawable.quiz_icon10));
+        groups.add(new Group("Java Arrays", Arrays.asList("Exercise 1", "Exercise 2","Exercise 3", "Exercise 4", "Exercise 5", "Exercise 6"), R.drawable.quiz_icon11));
         CustomExpandableListAdapter adapter = new CustomExpandableListAdapter(this, groups);
         expandableListView.setAdapter(adapter);
         expandableListView.setOnChildClickListener(new ExpandableListView.OnChildClickListener() {
