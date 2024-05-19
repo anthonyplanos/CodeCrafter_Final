@@ -152,7 +152,7 @@
         &#160;&#160;&#160;&#160;358
         &#160;&#160;&#160;&#160;50000\n"
         "\nInside the println() method, you can execute mathematical calculations as well. This capability allows you to directly print the result of arithmetic operations without storing them in variables beforehand.\n\n\n\n\n"
-        "Output: 6\n\n\n\n\n\n"
+        "Output: 6\n\n\n\n"
         "Output: 10"
     </string>
 
@@ -241,11 +241,11 @@
         "\nIn Java, when you need to declare multiple variables of the same type within the same scope, you can utilize a comma-separated list. This approach allows you to declare several variables in a single line, making your code more concise and readable.\n"
         "\nBy grouping related variables together using a comma-separated list, you can streamline the declaration process and improve code organization. This technique is particularly useful when you have a series of variables that serve similar purposes or are closely related in functionality.\n"
         "\nThe comma-separated list approach also facilitates variable initialization. You can declare and initialize multiple variables of the same type in a single line, reducing redundancy and improving code efficiency.\n"
-        "\nOverall, employing a comma-separated list to declare multiple variables of the same type offers a convenient and efficient way to manage variables in Java, enhancing code readability and maintainability.\n\n\n\n\n\n\n\n"
-        "You can simply write:\n\n\n\n\n\n\n\n"
+        "\nOverall, employing a comma-separated list to declare multiple variables of the same type offers a convenient and efficient way to manage variables in Java, enhancing code readability and maintainability.\n\n\n\n\n\n\n"
+        "You can simply write:\n\n\n\n\n"
         "\nOutput: 61\n"
         "\n&#9654; One Variable to Multiple Variable\n"
-        "\nYou can assign the same value to multiple variables in a single line as well:\n\n\n\n\n\n\n"
+        "\nYou can assign the same value to multiple variables in a single line as well:\n\n\n\n"
         "\nOutput: 150"
     </string>
     <string name="identifiers">
@@ -274,7 +274,7 @@
         "\nIn Java, variables must be declared with their data types before they can be used. This declaration specifies the type of data the variable can hold and allocates memory accordingly. Whether it's an integer, floating-point number, character, boolean, or any other type, specifying the data type is a fundamental aspect of Java programming that underpins the language's strong typing system."
     </string>
     <string name="primitive_data_types">
-        "A primitive data type in Java delineates the size and type of variable values and does not feature additional methods or functionalities inherent to objects. Unlike reference types, which refer to objects and come with built-in methods and behaviors, primitive data types are simple and represent raw values directly.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n"
+        "A primitive data type in Java delineates the size and type of variable values and does not feature additional methods or functionalities inherent to objects. Unlike reference types, which refer to objects and come with built-in methods and behaviors, primitive data types are simple and represent raw values directly.\n\n\n\n\n\n\n\n\n\n\n\n\n\n"
         "These primitive data types provide a foundational framework for Java programming, enabling developers to work with a wide range of data efficiently and effectively. Understanding their characteristics and appropriate usage is crucial for writing robust and performant Java code."
     </string>
     <string name="java_numbers">
@@ -285,13 +285,13 @@
         "\nAlthough Java provides various numeric types, the most commonly used for numbers are int (for whole numbers) and double (for floating-point numbers). Nonetheless, we will elaborate on all of them as you continue reading.\n"
         "\n\n&#9654; Integer Types\n"
         "\n&#160;&#160;&#9675; Byte\n"
-        "\nThe byte data type is capable of storing whole numbers ranging from -128 to 127. It serves as an alternative to int or other integer types when you are confident that the value will fall within this range, thus conserving memory.\n\n\n\n\n\n"
+        "\nThe byte data type is capable of storing whole numbers ranging from -128 to 127. It serves as an alternative to int or other integer types when you are confident that the value will fall within this range, thus conserving memory.\n\n\n\n"
         "Output: 100\n"
         "\n\n&#160;&#160;&#9675; Short\n"
-        "\nThe short data type is capable of storing whole numbers within the range of -32,768 to 32,767.\n\n\n\n\n\n\n"
+        "\nThe short data type is capable of storing whole numbers within the range of -32,768 to 32,767.\n\n\n\n\n"
         "Output: 5000\n"
         "\n\n&#160;&#160;&#9675; Int\n"
-        "\nThe int data type can accommodate whole numbers spanning from -2,147,483,648 to 2,147,483,647. In our tutorial, as well as in general practice, the int data type is the preferred choice when creating variables with numeric values.\n\n\n\n\n\n\n"
+        "\nThe int data type can accommodate whole numbers spanning from -2,147,483,648 to 2,147,483,647. In our tutorial, as well as in general practice, the int data type is the preferred choice when creating variables with numeric values.\n\n\n\n\n"
         "Output: 100000\n"
         "\n\n&#160;&#160;&#9675; Long\n"
         "\nThe long data type is capable of storing whole numbers ranging from -9,223,372,036,854,775,808 to 9,223,372,036,854,775,807. It's employed when the int data type is insufficient to accommodate the value. Note that you should conclude the value with an "L":\n\n\n\n\n"
@@ -303,7 +303,7 @@
         "\nDouble Example:\n\n\n\n\n"
         "Output: 19.99\n"
         "\nWhen choosing between float and double, consider the precision of the floating-point value. Floats offer around six or seven decimal digits of precision, while doubles provide approximately 15 digits. Therefore, it's generally safer to utilize double for most calculations due to its higher precision.\n"
-        "\n\n&#160;&#160;&#9675; Scientific Numbers\n\n\n\n\n\n\n\n\n"
+        "\n\n&#160;&#160;&#9675; Scientific Numbers\n\n\n\n\n\n"
         "Output:  \n&#160;&#160;&#160; 35000.0\n&#160;&#160;&#160; 120000.0\n"
     </string>
     <string name="boolean_types">
@@ -320,7 +320,7 @@
         "&#9654; Characters\n"
         "\nThe char data type serves to store a solitary character, which must be enclosed within single quotes, such as 'A' or 'c':\n\n\n\n\n\n"
         "Output: B\n"
-        "\nAlternatively, if you're acquainted with ASCII values, you can utilize them to represent specific characters:\n\n\n\n\n\n\n\n\n\n"
+        "\nAlternatively, if you're acquainted with ASCII values, you can utilize them to represent specific characters:\n\n\n\n\n\n\n\n"
         "Output:\n&#160; A\n&#160; B\n&#160; C\n"
         "&#9654; Strings\n"
         "\nThe String data type is employed to contain a sequence of characters, i.e., text. String values necessitate being enclosed within double quotes:\n\n\n\n\n\n"
@@ -453,7 +453,7 @@
     <string name="special_characters">
         "&#9654; Strings - Special Characters\n"
         "\nIn Java, because strings must be enclosed within quotes, if you attempt to use the + operator to concatenate a number and a string without properly formatting the string, it will result in an error.\n\n\n\n"
-        "To circumvent this issue, you can utilize the backslash escape character (\). The backslash (\) escape character transforms special characters into string characters, allowing you to combine numbers and strings without encountering errors.\n\n\n\n\n\n\n\n"
+        "To circumvent this issue, you can utilize the backslash escape character (\). The backslash (\) escape character transforms special characters into string characters, allowing you to combine numbers and strings without encountering errors.\n\n\n\n\n\n\n\n\n\n\n\n"
         "The sequence \" within a string will insert a double quote character. This is useful when you need to include double quotes within a string without terminating it prematurely.\n\n\n\n\n"
         "\nOutput: We are the so-called "Vikings" from the north.\n"
         "\nThe sequence \' within a string will insert a single quote character. This is useful when you need to include single quotes within a string without terminating it prematurely.\n\n\n\n\n"
@@ -551,7 +551,7 @@
         "\nThe else statement enables developers to handle situations where there are two possible outcomes based on a single condition.\nExample:\n\n\n\n\n\n\n\n\n\n\n\n\nIn the example above, time (20) is greater than 18, so the condition is false. Because of this, we move on to the else condition and print to the screen "Good evening". If the time was less than 18, the program would print "Good day"."
     </string>
     <string name="the_else_if_statements">
-        "Use the else if statement to specify a new condition if the first condition is false.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n"
+        "Use the else if statement to specify a new condition if the first condition is false.\n\n\n\n\n\n\n\n\n\n\n\n"
         "Example:\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n"
         "In the example above, time (22) is greater than 10, so the first condition is false. The next condition, in the else if statement, is also false, so we move on to the else condition since condition1 and condition2 is both false - and print to the screen "Good evening".\n"
         "\nHowever, if the time was 14, our program would print "Good day.""
@@ -565,7 +565,7 @@
     </string>
 
     <string name="java_switch_statements">
-        "Instead of writing many if..else statements, you can use the switch statement. The switch statement selects one of many code blocks to be executed:\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n"
+        "Instead of writing many if..else statements, you can use the switch statement. The switch statement selects one of many code blocks to be executed:\n\n\n\n\n\n\n\n\n\n\n"
         "\nThis is how it works:\n"
         "\n&#9679; The switch expression is evaluated once.\n"
         "\n&#9679; The value of the expression is compared with the values of each case.\n"
@@ -625,7 +625,7 @@
         "\nStatement 3 increases a value (i++) each time the code block in the loop has been executed."
     </string>
     <string name="another_example">
-        "This example will only print even values between 0 and 10:\n"
+        "This example will only print even values between 0 and 10:\n\n\n\n"
         "\nOutput:\n 0\n 2\n 4\n 6\n 8\n 10\n"
         "\nIn this example, we're using a for loop to print even numbers between 0 and 10. Let's break down the components of the loop:\n"
         "\n&#9679; Initialization:\n"
