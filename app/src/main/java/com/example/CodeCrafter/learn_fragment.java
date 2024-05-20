@@ -81,7 +81,7 @@ public class learn_fragment extends AppCompatActivity {
                                 LinearLayout.LayoutParams.MATCH_PARENT,
                                 ViewGroup.LayoutParams.WRAP_CONTENT
                         );
-                        layoutParams2.setMargins(20, -5840, 20, 0);
+                        layoutParams2.setMargins(20, -5780, 20, 0);
                         imageView2.setLayoutParams(layoutParams2);
                         imageContainer.addView(imageView2);
                         learn_fragment.setText(R.string.the_main_method);
@@ -95,7 +95,7 @@ public class learn_fragment extends AppCompatActivity {
                                 LinearLayout.LayoutParams.MATCH_PARENT,
                                 ViewGroup.LayoutParams.WRAP_CONTENT
                         );
-                        layoutParams3.setMargins(20, -3680, 20, 0);
+                        layoutParams3.setMargins(20, -3580, 20, 0);
                         imageView3.setLayoutParams(layoutParams3);
                         imageContainer.addView(imageView3);
                         learn_fragment.setText(R.string.system_outprinln);
@@ -116,7 +116,7 @@ public class learn_fragment extends AppCompatActivity {
                                 LinearLayout.LayoutParams.MATCH_PARENT,
                                 ViewGroup.LayoutParams.WRAP_CONTENT
                         );
-                        layoutParams1.setMargins(20, -4700, 20, -240);
+                        layoutParams1.setMargins(20, -4550, 20, -240);
                         imageView1.setLayoutParams(layoutParams1);
                         imageContainer.addView(imageView1);
 //                        IMAGE 2
@@ -126,7 +126,7 @@ public class learn_fragment extends AppCompatActivity {
                                 LinearLayout.LayoutParams.MATCH_PARENT,
                                 ViewGroup.LayoutParams.WRAP_CONTENT
                         );
-                        layoutParams2.setMargins(20, 2810, 20, -4160);
+                        layoutParams2.setMargins(20, 2750, 20, -4160);
                         imageView2.setLayoutParams(layoutParams2);
                         imageContainer.addView(imageView2);
                         learn_fragment.setPadding(0,0,0,0);
@@ -141,7 +141,7 @@ public class learn_fragment extends AppCompatActivity {
                                 LinearLayout.LayoutParams.MATCH_PARENT,
                                 ViewGroup.LayoutParams.WRAP_CONTENT
                         );
-                        layoutParams3.setMargins(20, -1180, 20, 20);
+                        layoutParams3.setMargins(20, -1080, 20, 20);
                         imageView3.setLayoutParams(layoutParams3);
                         imageContainer.addView(imageView3);
 
@@ -152,7 +152,7 @@ public class learn_fragment extends AppCompatActivity {
                                 LinearLayout.LayoutParams.MATCH_PARENT,
                                 ViewGroup.LayoutParams.WRAP_CONTENT
                         );
-                        layoutParams4.setMargins(20, -1980, 20, -6500);
+                        layoutParams4.setMargins(20, -1880, 20, -6500);
                         imageView4.setLayoutParams(layoutParams4);
                         imageContainer.addView(imageView4);
                         learn_fragment.setText(R.string.double_quotes);
@@ -166,7 +166,7 @@ public class learn_fragment extends AppCompatActivity {
                                 LinearLayout.LayoutParams.MATCH_PARENT,
                                 ViewGroup.LayoutParams.WRAP_CONTENT
                         );
-                        layoutParams5.setMargins(20, -1910, 20, 0);
+                        layoutParams5.setMargins(20, -1860, 20, 0);
                         imageView5.setLayoutParams(layoutParams5);
                         imageContainer.addView(imageView5);
                         learn_fragment.setText(R.string.the_print_method);
@@ -180,7 +180,7 @@ public class learn_fragment extends AppCompatActivity {
                                 LinearLayout.LayoutParams.MATCH_PARENT,
                                 ViewGroup.LayoutParams.WRAP_CONTENT
                         );
-                        layoutParams6.setMargins(20, -2090, 20, -300);
+                        layoutParams6.setMargins(20, -2130, 20, -300);
                         imageView6.setLayoutParams(layoutParams6);
                         imageContainer.addView(imageView6);
 //                        IMAGE 2
@@ -190,7 +190,7 @@ public class learn_fragment extends AppCompatActivity {
                                 LinearLayout.LayoutParams.MATCH_PARENT,
                                 ViewGroup.LayoutParams.WRAP_CONTENT
                         );
-                        layoutParams7.setMargins(20, 200, 20, -730);
+                        layoutParams7.setMargins(20, 180, 20, -730);
                         imageView7.setLayoutParams(layoutParams7);
                         imageContainer.addView(imageView7);
 //                        IMAGE 3
@@ -225,7 +225,7 @@ public class learn_fragment extends AppCompatActivity {
                                 LinearLayout.LayoutParams.MATCH_PARENT,
                                 ViewGroup.LayoutParams.WRAP_CONTENT
                         );
-                        layoutParams1.setMargins(20, -3790, 20, -180);
+                        layoutParams1.setMargins(20, -3730, 20, -180);
                         imageView1.setLayoutParams(layoutParams1);
                         imageContainer.addView(imageView1);
 //                        IMAGE 2
@@ -235,7 +235,7 @@ public class learn_fragment extends AppCompatActivity {
                                 LinearLayout.LayoutParams.MATCH_PARENT,
                                 ViewGroup.LayoutParams.WRAP_CONTENT
                         );
-                        layoutParams2.setMargins(20, 400, 20, -2400);
+                        layoutParams2.setMargins(20, 370, 20, -2400);
                         imageView2.setLayoutParams(layoutParams2);
                         imageContainer.addView(imageView2);
                         learn_fragment.setText(R.string.singleline_comments);
@@ -274,7 +274,7 @@ public class learn_fragment extends AppCompatActivity {
                                 LinearLayout.LayoutParams.MATCH_PARENT,
                                 ViewGroup.LayoutParams.WRAP_CONTENT
                         );
-                        layoutParams1.setMargins(20, -2940, 20, -530);
+                        layoutParams1.setMargins(20, -2780, 20, -530);
                         imageView1.setLayoutParams(layoutParams1);
                         imageContainer.addView(imageView1);
 //                        IMAGE 2
@@ -284,7 +284,7 @@ public class learn_fragment extends AppCompatActivity {
                                 LinearLayout.LayoutParams.MATCH_PARENT,
                                 ViewGroup.LayoutParams.WRAP_CONTENT
                         );
-                        layoutParams2.setMargins(20, 190, 20, -700);
+                        layoutParams2.setMargins(20, 170, 20, -700);
                         imageView2.setLayoutParams(layoutParams2);
                         imageContainer.addView(imageView2);
 
@@ -306,7 +306,7 @@ public class learn_fragment extends AppCompatActivity {
                                 LinearLayout.LayoutParams.MATCH_PARENT,
                                 ViewGroup.LayoutParams.WRAP_CONTENT
                         );
-                        layoutParams4.setMargins(20, 150, 20, -2000);
+                        layoutParams4.setMargins(20, 100, 20, -2000);
                         imageView4.setLayoutParams(layoutParams4);
                         imageContainer.addView(imageView4);
                         learn_fragment.setText(R.string.declaring_variables);
@@ -349,7 +349,7 @@ public class learn_fragment extends AppCompatActivity {
                                 LinearLayout.LayoutParams.MATCH_PARENT,
                                 ViewGroup.LayoutParams.WRAP_CONTENT
                         );
-                        layoutParams7.setMargins(20, -2880, 20, -700);
+                        layoutParams7.setMargins(20, -2980, 20, -700);
                         imageView7.setLayoutParams(layoutParams7);
                         imageContainer.addView(imageView7);
 //                        IMAGE 2
@@ -369,7 +369,7 @@ public class learn_fragment extends AppCompatActivity {
                                 LinearLayout.LayoutParams.MATCH_PARENT,
                                 ViewGroup.LayoutParams.WRAP_CONTENT
                         );
-                        layoutParams9.setMargins(20, 1050, 20, -5000);
+                        layoutParams9.setMargins(20, 170, 20, -5000);
                         imageView9.setLayoutParams(layoutParams9);
                         imageContainer.addView(imageView9);
                         learn_fragment.setText(R.string.print_display_variables);
@@ -438,7 +438,7 @@ public class learn_fragment extends AppCompatActivity {
                                 LinearLayout.LayoutParams.MATCH_PARENT,
                                 ViewGroup.LayoutParams.WRAP_CONTENT
                         );
-                        layoutParams1.setMargins(20, -3900, 20, 0);
+                        layoutParams1.setMargins(20, -3800, 20, 0);
                         imageView1.setLayoutParams(layoutParams1);
                         imageContainer.addView(imageView1);
                         learn_fragment.setText(R.string.java_data_types);
@@ -466,7 +466,7 @@ public class learn_fragment extends AppCompatActivity {
                                 LinearLayout.LayoutParams.MATCH_PARENT,
                                 ViewGroup.LayoutParams.WRAP_CONTENT
                         );
-                        layoutParams3.setMargins(20, -7420, 20, -330);
+                        layoutParams3.setMargins(20, -7320, 20, -330);
                         imageView3.setLayoutParams(layoutParams3);
                         imageContainer.addView(imageView3);
 //                        IMAGE 2
@@ -476,7 +476,7 @@ public class learn_fragment extends AppCompatActivity {
                                 LinearLayout.LayoutParams.MATCH_PARENT,
                                 ViewGroup.LayoutParams.WRAP_CONTENT
                         );
-                        layoutParams4.setMargins(20, 50, 20, -100);
+                        layoutParams4.setMargins(20, 130, 20, -100);
                         imageView4.setLayoutParams(layoutParams4);
                         imageContainer.addView(imageView4);
 //                        IMAGE 3
@@ -486,7 +486,7 @@ public class learn_fragment extends AppCompatActivity {
                                 LinearLayout.LayoutParams.MATCH_PARENT,
                                 ViewGroup.LayoutParams.WRAP_CONTENT
                         );
-                        layoutParams5.setMargins(20, 200, 20, -50);
+                        layoutParams5.setMargins(20, 170, 20, -50);
                         imageView5.setLayoutParams(layoutParams5);
                         imageContainer.addView(imageView5);
 //                        IMAGE 4
@@ -496,7 +496,7 @@ public class learn_fragment extends AppCompatActivity {
                                 LinearLayout.LayoutParams.MATCH_PARENT,
                                 ViewGroup.LayoutParams.WRAP_CONTENT
                         );
-                        layoutParams6.setMargins(20, 200, 20, 20);
+                        layoutParams6.setMargins(20, 150, 20, 20);
                         imageView6.setLayoutParams(layoutParams6);
                         imageContainer.addView(imageView6);
 //                        IMAGE 5
@@ -506,7 +506,7 @@ public class learn_fragment extends AppCompatActivity {
                                 LinearLayout.LayoutParams.MATCH_PARENT,
                                 ViewGroup.LayoutParams.WRAP_CONTENT
                         );
-                        layoutParams7.setMargins(20, 260, 20, -480);
+                        layoutParams7.setMargins(20, 150, 20, -480);
                         imageView7.setLayoutParams(layoutParams7);
                         imageContainer.addView(imageView7);
 //                        IMAGE 6
@@ -516,7 +516,7 @@ public class learn_fragment extends AppCompatActivity {
                                 LinearLayout.LayoutParams.MATCH_PARENT,
                                 ViewGroup.LayoutParams.WRAP_CONTENT
                         );
-                        layoutParams8.setMargins(20, -160, 20, -110);
+                        layoutParams8.setMargins(20, -60, 20, -110);
                         imageView8.setLayoutParams(layoutParams8);
                         imageContainer.addView(imageView8);
 //                        IMAGE 7
@@ -540,7 +540,7 @@ public class learn_fragment extends AppCompatActivity {
                                 LinearLayout.LayoutParams.MATCH_PARENT,
                                 ViewGroup.LayoutParams.WRAP_CONTENT
                         );
-                        layoutParams10.setMargins(20, -2910, 20, 0);
+                        layoutParams10.setMargins(20, -2710, 20, 0);
                         imageView10.setLayoutParams(layoutParams10);
                         imageContainer.addView(imageView10);
                         learn_fragment.setText(R.string.boolean_types);
@@ -554,7 +554,7 @@ public class learn_fragment extends AppCompatActivity {
                                 LinearLayout.LayoutParams.MATCH_PARENT,
                                 ViewGroup.LayoutParams.WRAP_CONTENT
                         );
-                        layoutParams11.setMargins(20, -3720, 20, -600);
+                        layoutParams11.setMargins(20, -3620, 20, -600);
                         imageView11.setLayoutParams(layoutParams11);
                         imageContainer.addView(imageView11);
 //                        IMAGE 2
@@ -564,7 +564,7 @@ public class learn_fragment extends AppCompatActivity {
                                 LinearLayout.LayoutParams.MATCH_PARENT,
                                 ViewGroup.LayoutParams.WRAP_CONTENT
                         );
-                        layoutParams12.setMargins(20, 40, 20, -280);
+                        layoutParams12.setMargins(20, 80, 20, -280);
                         imageView12.setLayoutParams(layoutParams12);
                         imageContainer.addView(imageView12);
 //                        IMAGE 3
@@ -638,7 +638,7 @@ public class learn_fragment extends AppCompatActivity {
                                 LinearLayout.LayoutParams.MATCH_PARENT,
                                 ViewGroup.LayoutParams.WRAP_CONTENT
                         );
-                        layoutParams1.setMargins(20, -2490, 20, -560);
+                        layoutParams1.setMargins(20, -1990, 20, -560);
                         imageView1.setLayoutParams(layoutParams1);
                         imageContainer.addView(imageView1);
 //                        IMAGE 2
@@ -676,7 +676,7 @@ public class learn_fragment extends AppCompatActivity {
                                 LinearLayout.LayoutParams.MATCH_PARENT,
                                 ViewGroup.LayoutParams.WRAP_CONTENT
                         );
-                        layoutParams4.setMargins(20, -2490, 20, -630);
+                        layoutParams4.setMargins(20, -1290, 20, -630);
                         imageView4.setLayoutParams(layoutParams4);
                         imageContainer.addView(imageView4);
 //                        IMAGE 2
@@ -696,7 +696,7 @@ public class learn_fragment extends AppCompatActivity {
                                 LinearLayout.LayoutParams.MATCH_PARENT,
                                 ViewGroup.LayoutParams.WRAP_CONTENT
                         );
-                        layoutParams6.setMargins(20, 200, 20, -1000);
+                        layoutParams6.setMargins(20, 100, 20, -1000);
                         imageView6.setLayoutParams(layoutParams6);
                         imageContainer.addView(imageView6);
                         learn_fragment.setText(R.string.java_assignment_operators);
@@ -769,7 +769,7 @@ public class learn_fragment extends AppCompatActivity {
                                 LinearLayout.LayoutParams.MATCH_PARENT,
                                 ViewGroup.LayoutParams.WRAP_CONTENT
                         );
-                        layoutParams2.setMargins(20, -1010, 20, 0);
+                        layoutParams2.setMargins(20, -860, 20, 0);
                         imageView2.setLayoutParams(layoutParams2);
                         imageContainer.addView(imageView2);
                         learn_fragment.setText(R.string.string_length);
@@ -811,7 +811,7 @@ public class learn_fragment extends AppCompatActivity {
                                 LinearLayout.LayoutParams.MATCH_PARENT,
                                 ViewGroup.LayoutParams.WRAP_CONTENT
                         );
-                        layoutParams5.setMargins(20, -4580, 20, 1350);
+                        layoutParams5.setMargins(20, -4420, 20, 1350);
                         imageView5.setLayoutParams(layoutParams5);
                         imageContainer.addView(imageView5);
 //                        IMAGE 2
@@ -821,7 +821,7 @@ public class learn_fragment extends AppCompatActivity {
                                 LinearLayout.LayoutParams.MATCH_PARENT,
                                 ViewGroup.LayoutParams.WRAP_CONTENT
                         );
-                        layoutParams6.setMargins(20, 1250, 20, -500);
+                        layoutParams6.setMargins(20, 1100, 20, -500);
                         imageView6.setLayoutParams(layoutParams6);
                         imageContainer.addView(imageView6);
                         learn_fragment.setText(R.string.concatenation);
@@ -835,7 +835,7 @@ public class learn_fragment extends AppCompatActivity {
                                 LinearLayout.LayoutParams.MATCH_PARENT,
                                 ViewGroup.LayoutParams.WRAP_CONTENT
                         );
-                        layoutParams7.setMargins(20, -1970, 20, -600);
+                        layoutParams7.setMargins(20, -1650, 20, -600);
                         imageView7.setLayoutParams(layoutParams7);
                         imageContainer.addView(imageView7);
 //                        IMAGE 2
@@ -845,7 +845,7 @@ public class learn_fragment extends AppCompatActivity {
                                 LinearLayout.LayoutParams.MATCH_PARENT,
                                 ViewGroup.LayoutParams.WRAP_CONTENT
                         );
-                        layoutParams8.setMargins(20, 300, 20, -560);
+                        layoutParams8.setMargins(20, 50, 20, -560);
                         imageView8.setLayoutParams(layoutParams8);
                         imageContainer.addView(imageView8);
 //                        IMAGE 3
@@ -855,7 +855,7 @@ public class learn_fragment extends AppCompatActivity {
                                 LinearLayout.LayoutParams.MATCH_PARENT,
                                 ViewGroup.LayoutParams.WRAP_CONTENT
                         );
-                        layoutParams9.setMargins(20, 300, 20, -2000);
+                        layoutParams9.setMargins(20, 150, 20, -2000);
                         imageView9.setLayoutParams(layoutParams9);
                         imageContainer.addView(imageView9);
                         learn_fragment.setText(R.string.number_and_strings);
@@ -869,7 +869,7 @@ public class learn_fragment extends AppCompatActivity {
                                 LinearLayout.LayoutParams.MATCH_PARENT,
                                 ViewGroup.LayoutParams.WRAP_CONTENT
                         );
-                        layoutParams10.setMargins(20, -4900, 20, -760);
+                        layoutParams10.setMargins(20, -4850, 20, -760);
                         imageView10.setLayoutParams(layoutParams10);
                         imageContainer.addView(imageView10);
 //                        IMAGE 2
@@ -879,7 +879,7 @@ public class learn_fragment extends AppCompatActivity {
                                 LinearLayout.LayoutParams.MATCH_PARENT,
                                 ViewGroup.LayoutParams.WRAP_CONTENT
                         );
-                        layoutParams11.setMargins(20, 71, 20, -810);
+                        layoutParams11.setMargins(20, 141, 20, -810);
                         imageView11.setLayoutParams(layoutParams11);
                         imageContainer.addView(imageView11);
 //                        IMAGE 3
@@ -889,7 +889,7 @@ public class learn_fragment extends AppCompatActivity {
                                 LinearLayout.LayoutParams.MATCH_PARENT,
                                 ViewGroup.LayoutParams.WRAP_CONTENT
                         );
-                        layoutParams12.setMargins(20, 0, 20, -370);
+                        layoutParams12.setMargins(20, 80, 20, -370);
                         imageView12.setLayoutParams(layoutParams12);
                         imageContainer.addView(imageView12);
 //                        IMAGE 4
@@ -899,7 +899,7 @@ public class learn_fragment extends AppCompatActivity {
                                 LinearLayout.LayoutParams.MATCH_PARENT,
                                 ViewGroup.LayoutParams.WRAP_CONTENT
                         );
-                        layoutParams13.setMargins(20, 200, 20, -370);
+                        layoutParams13.setMargins(20, 180, 20, -370);
                         imageView13.setLayoutParams(layoutParams13);
                         imageContainer.addView(imageView13);
 //                        IMAGE 5
@@ -909,7 +909,7 @@ public class learn_fragment extends AppCompatActivity {
                                 LinearLayout.LayoutParams.MATCH_PARENT,
                                 ViewGroup.LayoutParams.WRAP_CONTENT
                         );
-                        layoutParams14.setMargins(20, 250, 20, -870);
+                        layoutParams14.setMargins(20, 150, 20, -870);
                         imageView14.setLayoutParams(layoutParams14);
                         imageContainer.addView(imageView14);
 //                        IMAGE 6
@@ -919,7 +919,7 @@ public class learn_fragment extends AppCompatActivity {
                                 LinearLayout.LayoutParams.MATCH_PARENT,
                                 ViewGroup.LayoutParams.WRAP_CONTENT
                         );
-                        layoutParams15.setMargins(20, 150, 20, -2000);
+                        layoutParams15.setMargins(20, 80, 20, -2000);
                         imageView15.setLayoutParams(layoutParams15);
                         imageContainer.addView(imageView15);
                         learn_fragment.setText(R.string.special_characters);
@@ -996,7 +996,7 @@ public class learn_fragment extends AppCompatActivity {
                                 LinearLayout.LayoutParams.MATCH_PARENT,
                                 ViewGroup.LayoutParams.WRAP_CONTENT
                         );
-                        layoutParams5.setMargins(20, -1460, 20, -420);
+                        layoutParams5.setMargins(20, -1520, 20, -420);
                         imageView5.setLayoutParams(layoutParams5);
                         imageContainer.addView(imageView5);
 //                        IMAGE 2
@@ -1006,7 +1006,7 @@ public class learn_fragment extends AppCompatActivity {
                                 LinearLayout.LayoutParams.MATCH_PARENT,
                                 ViewGroup.LayoutParams.WRAP_CONTENT
                         );
-                        layoutParams6.setMargins(20, 0, 20, -1000);
+                        layoutParams6.setMargins(20, 30, 20, -1000);
                         imageView6.setLayoutParams(layoutParams6);
                         imageContainer.addView(imageView6);
                         learn_fragment.setText(R.string.random_numbers);
@@ -1031,7 +1031,7 @@ public class learn_fragment extends AppCompatActivity {
                                 LinearLayout.LayoutParams.MATCH_PARENT,
                                 ViewGroup.LayoutParams.WRAP_CONTENT
                         );
-                        layoutParams1.setMargins(20, -1350, 20, 0);
+                        layoutParams1.setMargins(20, -1300, 20, 0);
                         imageView1.setLayoutParams(layoutParams1);
                         imageContainer.addView(imageView1);
                         learn_fragment.setText(R.string.boolean_values);
@@ -1089,7 +1089,7 @@ public class learn_fragment extends AppCompatActivity {
                                 LinearLayout.LayoutParams.MATCH_PARENT,
                                 ViewGroup.LayoutParams.WRAP_CONTENT
                         );
-                        layoutParams6.setMargins(20, -2940, 20, -800);
+                        layoutParams6.setMargins(20, -2740, 20, -800);
                         imageView6.setLayoutParams(layoutParams6);
                         imageContainer.addView(imageView6);
 //                        IMAGE 2
@@ -1124,7 +1124,7 @@ public class learn_fragment extends AppCompatActivity {
                                 LinearLayout.LayoutParams.MATCH_PARENT,
                                 ViewGroup.LayoutParams.WRAP_CONTENT
                         );
-                        layoutParams1.setMargins(20, -3150, 20, -480);
+                        layoutParams1.setMargins(20, -2750, 20, -480);
                         imageView1.setLayoutParams(layoutParams1);
                         imageContainer.addView(imageView1);
 //                        IMAGE 2
@@ -1134,7 +1134,7 @@ public class learn_fragment extends AppCompatActivity {
                                 LinearLayout.LayoutParams.MATCH_PARENT,
                                 ViewGroup.LayoutParams.WRAP_CONTENT
                         );
-                        layoutParams2.setMargins(20, 200, 20, -690);
+                        layoutParams2.setMargins(20, 150, 20, -690);
                         imageView2.setLayoutParams(layoutParams2);
                         imageContainer.addView(imageView2);
 //                        IMAGE 3
@@ -1144,7 +1144,7 @@ public class learn_fragment extends AppCompatActivity {
                                 LinearLayout.LayoutParams.MATCH_PARENT,
                                 ViewGroup.LayoutParams.WRAP_CONTENT
                         );
-                        layoutParams3.setMargins(20, 200, 20, -3000);
+                        layoutParams3.setMargins(20, 0, 20, -3000);
                         imageView3.setLayoutParams(layoutParams3);
                         imageContainer.addView(imageView3);
                         learn_fragment.setText(R.string.the_if_statements);
@@ -1158,7 +1158,7 @@ public class learn_fragment extends AppCompatActivity {
                                 LinearLayout.LayoutParams.MATCH_PARENT,
                                 ViewGroup.LayoutParams.WRAP_CONTENT
                         );
-                        layoutParams4.setMargins(20, -3770, 20, -810);
+                        layoutParams4.setMargins(20, -3670, 20, -810);
                         imageView4.setLayoutParams(layoutParams4);
                         imageContainer.addView(imageView4);
 //                        IMAGE 2
@@ -1182,7 +1182,7 @@ public class learn_fragment extends AppCompatActivity {
                                 LinearLayout.LayoutParams.MATCH_PARENT,
                                 ViewGroup.LayoutParams.WRAP_CONTENT
                         );
-                        layoutParams6.setMargins(20, -3350, 20, -1390);
+                        layoutParams6.setMargins(20, -3150, 20, -1390);
                         imageView6.setLayoutParams(layoutParams6);
                         imageContainer.addView(imageView6);
 //                        IMAGE 2
@@ -1206,7 +1206,7 @@ public class learn_fragment extends AppCompatActivity {
                                 LinearLayout.LayoutParams.MATCH_PARENT,
                                 ViewGroup.LayoutParams.WRAP_CONTENT
                         );
-                        layoutParams8.setMargins(20, -4750, 20, 360);
+                        layoutParams8.setMargins(20, -4650, 20, 360);
                         imageView8.setLayoutParams(layoutParams8);
                         imageContainer.addView(imageView8);
 //                        IMAGE 2
@@ -1226,7 +1226,7 @@ public class learn_fragment extends AppCompatActivity {
                                 LinearLayout.LayoutParams.MATCH_PARENT,
                                 ViewGroup.LayoutParams.WRAP_CONTENT
                         );
-                        layoutParams10.setMargins(20, 300, 20, -5000);
+                        layoutParams10.setMargins(20, 200, 20, -5000);
                         imageView10.setLayoutParams(layoutParams10);
                         imageContainer.addView(imageView10);
                         learn_fragment.setText(R.string.java_short_hand_if_else);
@@ -1247,7 +1247,7 @@ public class learn_fragment extends AppCompatActivity {
                                 LinearLayout.LayoutParams.MATCH_PARENT,
                                 ViewGroup.LayoutParams.WRAP_CONTENT
                         );
-                        layoutParams1.setMargins(20, -3000, 20, -1970);
+                        layoutParams1.setMargins(20, -2900, 20, -1970);
                         imageView1.setLayoutParams(layoutParams1);
                         imageContainer.addView(imageView1);
 //                        IMAGE 2
@@ -1257,7 +1257,7 @@ public class learn_fragment extends AppCompatActivity {
                                 LinearLayout.LayoutParams.MATCH_PARENT,
                                 ViewGroup.LayoutParams.WRAP_CONTENT
                         );
-                        layoutParams2.setMargins(20, 600, 20, -4000);
+                        layoutParams2.setMargins(20, 500, 20, -4000);
                         imageView2.setLayoutParams(layoutParams2);
                         imageContainer.addView(imageView2);
                         learn_fragment.setText(R.string.java_switch_statements);
@@ -1531,7 +1531,7 @@ public class learn_fragment extends AppCompatActivity {
                                 LinearLayout.LayoutParams.MATCH_PARENT,
                                 ViewGroup.LayoutParams.WRAP_CONTENT
                         );
-                        layoutParams4.setMargins(20, -1030, 20, 0);
+                        layoutParams4.setMargins(20, -960, 20, 0);
                         imageView4.setLayoutParams(layoutParams4);
                         imageContainer.addView(imageView4);
                         learn_fragment.setText(R.string.access_the_elements_of_an_array);
@@ -1569,7 +1569,7 @@ public class learn_fragment extends AppCompatActivity {
                                 LinearLayout.LayoutParams.MATCH_PARENT,
                                 ViewGroup.LayoutParams.WRAP_CONTENT
                         );
-                        layoutParams7.setMargins(20, -2200, 20, 0);
+                        layoutParams7.setMargins(20, -2100, 20, 0);
                         imageView7.setLayoutParams(layoutParams7);
                         imageContainer.addView(imageView7);
                         learn_fragment.setText(R.string.array_length);
@@ -1593,7 +1593,7 @@ public class learn_fragment extends AppCompatActivity {
                                 LinearLayout.LayoutParams.MATCH_PARENT,
                                 ViewGroup.LayoutParams.WRAP_CONTENT
                         );
-                        layoutParams9.setMargins(20, 250, 20, -810);
+                        layoutParams9.setMargins(20, 260, 20, -810);
                         imageView9.setLayoutParams(layoutParams9);
                         imageContainer.addView(imageView9);
 //                        IMAGE 3
@@ -1617,7 +1617,7 @@ public class learn_fragment extends AppCompatActivity {
                                 LinearLayout.LayoutParams.MATCH_PARENT,
                                 ViewGroup.LayoutParams.WRAP_CONTENT
                         );
-                        layoutParams11.setMargins(20, -5470, 20, -100);
+                        layoutParams11.setMargins(20, -4590, 20, -100);
                         imageView11.setLayoutParams(layoutParams11);
                         imageContainer.addView(imageView11);
 //                        IMAGE 2
@@ -1637,7 +1637,7 @@ public class learn_fragment extends AppCompatActivity {
                                 LinearLayout.LayoutParams.MATCH_PARENT,
                                 ViewGroup.LayoutParams.WRAP_CONTENT
                         );
-                        layoutParams13.setMargins(20, 250, 20, -780);
+                        layoutParams13.setMargins(20, 150, 20, -780);
                         imageView13.setLayoutParams(layoutParams13);
                         imageContainer.addView(imageView13);
 //                        IMAGE 4
@@ -1647,7 +1647,7 @@ public class learn_fragment extends AppCompatActivity {
                                 LinearLayout.LayoutParams.MATCH_PARENT,
                                 ViewGroup.LayoutParams.WRAP_CONTENT
                         );
-                        layoutParams14.setMargins(20, 800, 20, -900000);
+                        layoutParams14.setMargins(20, 100, 20, -900000);
                         imageView14.setLayoutParams(layoutParams14);
                         imageContainer.addView(imageView14);
                         learn_fragment.setText(R.string.multidimensional_arrays);
